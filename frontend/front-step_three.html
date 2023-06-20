@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <title>Frontend_step3</title>
+</head>
+<body>
+  <header>
+      <div>
+      <img src="../img/semantic.png" alt="семантика" width="160" height="100">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="frontend.html"> К алгоритму Frontend </a></li>
+          <li><a href="example/front-example_step_3.html">К примеру дизайна</a></li>
+          <li>
+              <ul>
+                <li><div><a href="front-step_one.html">Шаг №1</a></div></li>
+                <li><div><a href="front-step_two.html">Шаг №2</a></div></li>
+                <li><div class="current_step"><a href="front-step_three.html">Шаг №3</a></div></li>
+                <li><div><a href="front-step_four.html">Шаг №4</a></div></li>
+                <li><div><a href="front-step_five.html">Шаг №5</a></div></li>
+                <li><div><a href="frontstep_six.html">Шаг №6</a></div></li>
+                <li><div><a href="front-step_seven.html">Шаг №7</a></div></li>
+                <li><div><a href="front-step_ache.html">Шаг №8</a></div></li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+      <blockquote class="blockquote"><p class="text-nowrap"><em>Семантическая вёрстка — подход к разметке, который опирается не на внешний вид сайта, а на смысловое предназначение каждого блока и логическую структуру документа.</em></p>
+      </blockquote>
+
+      <h2>Шаг №3  Cascading Style Sheets</h2>
+  </header>
+  <main>
+<!-- Шаг №3" -->
+    <article class="main-step3">
+  <!-- Первый раздел "Основы CSS" -->
+      <article class="#">
+        <h2 class="title">Основы CSS</h2>
+        <!-- Структура правила CSS -->
+          <section><h3>Структура правила CSS</h3>
+              <p><strong>Селектор</strong> - идентифицирует элементы, на которые оказывается воздействие.</p>
+              <p><strong>Объявление</strong> - содержит инструкции по визуализации и состоит из свойства и его значения.</p>
+              <p>Разделы стилевого правила:<code>селектор { property:value; }</code></p>
+              <p><strong>Комментарии</strong> - в таблицах стилей применяется следующий синтаксис <code>/*</code><em>здесь находится комментарий</em><code>*/</code>.</p>
+          </section>
+        <!-- Способы подключения таблицы стилей -->
+          <h3>Способы подключения таблицы стилей</h3>
+          <ul>
+            <li><p><strong>Внешние таблицы стилей</strong> - отдельный текстовый документ, содержащий несколько правил стилей. Представляет собой файл с расширением <code>css</code>. Файл связывается с помощью элемента <code>link</code> или импортируется с помощью правила <code>@import</code>.</p></li>
+            <li><p><strong>Вложенные таблицы стилей</strong> - помещаются в документ с помощью элемента <code>< style ></code>, который помещается в заголовке документа.</p></li>
+            <li><p><strong>Встроенные таблицы стилей</strong> - свойства стиля применяются к одному элементу с помощью атрибута <code>style</code>, несколько стилей разделяются точкой с запятой. Лучше не использовать.</p></li>
+          </ul>
+        <!-- Важные понятия -->
+          <h3>Важные понятия</h3>
+            <ul>
+              <li><p><strong>Наследование</strong> - передача свойств по иерархии структуры html-документа. Любое примененное к конкретному элементу свойство, переопределяет унаследованные этим элементом свойства.</p></li>
+              <li><p><strong>Каскад</strong> - применение нескольких таблиц стилей к одному документу. Управление стилем элементов, если на странице возникает конфликт нескольких источников информации о стиле. Переопределение стиля осуществляется на основании веса правила стиля. Вес стиля формируется на основе <em>приоритета</em> источника для правила стиля <em>специфичности</em> селектора и <em>порядка следования правил</em>.</p></li>
+              <li><p><strong>Приоритет источника</strong> - имеет следующий порядок от более приоритетного к менее:<br> 1) любое правило стиля, помеченное как <code>< !important ></code> читателем (пользователем).Пример применения: <code>< p{color: blue !important;} ></code>;<br> 2) таблицы стилей, составленные авторами веб-страницы;<br> 3) таблицы стилей, сформированные читателем (пользователем);<br> 4) заданные по умолчанию правила стилей браузера ("таблица стилей пользовательского агента").</p></li>
+              <li><p><strong>Специфичность</strong> - некоторые селекторы имеют больший "вес" и имеют приоритет над другими селекторами:<em>ЗАПОЛНИТЬ ПОЗДНЕЕ</em></p></li>
+              <li><p><strong>Правило следования</strong> - для правил имеющих равные "веса"" и одинаковый приоритет источника, решающим является какое из правил появилось последним.</p></li>
+              <li><p><strong>Блочная модель (box model)</strong> - браузеры представляют каждый элемент на странице как заключенные в прямоугольные блоки.<em>ЗАПОЛНИТЬ ПОЗДНЕЕ</em></p></li>
+            </ul>
+        <!-- Единицы измерения -->
+          <h3>Единицы измерения</h3>
+          <p><strong>Абсолютные единицы</strong> - имеют предопределенные значения (для веб-страниц, отображаемых на экране подходит только пиксель (px).</p>
+          <ul>
+            <li><p><strong>px</strong> - пиксели 1/96 дюйма.</p></li>
+            <li><p><strong>in</strong> - дюймы.</p></li>
+            <li><p><strong>mm (cm)</strong> - миллиметры (сантиметры).</p></li>
+            <li><p><strong>q</strong> - 1/4 миллиметра.</p></li>
+            <li><p><strong>pt</strong> - пункты (1/2 дюйма), применяется в полиграфическом дизайне.</p></li>
+            <li><p><strong>pc</strong> - пики (1 пика=1/72 дюйма), применяется в полиграфическом дизайне.</p></li>
+          </ul>
+            <p><strong>Относительные единицы</strong> - основаны на сравнении с размером другого элемента (размер текста или размер родительского элемента).</p>
+          <ul>
+            <li><p><strong>em</strong> - равна текущему размеру шрифта (ширина буквы "M"), расстояние между базовыми линиями (когда шрифт без дополнительного пространства между строками <em>"лидинг"</em>).</p></li>
+            <li><p><strong>ex</strong> - "x-высота" приблизительно равна высоте строчной буквы "х" в шрифте.</p></li>
+            <li><p><strong>rem</strong> - root em, равный размеру корневого элемента em HTML.</p></li>
+            <li><p><strong>ch</strong> - нулевая ширина, равная ширине нуля (0) в текущем шрифте и размере.</p></li>
+            <li><p><strong>vw</strong> - равная 1/100 ширины текущего окна просмотра браузера.</p></li>
+            <li><p><strong>vh</strong> - равная 1/100 высоты текущего окна просмотра браузера.</p></li>
+            <li><p><strong>vmin</strong> - минимальная единица просмотра, равная значению vw или vh, в зависимости от того, что из них меньше.</p></li>
+            <li><p><strong>vmax</strong> -  максимальная единица просмотра, равная значению vw или vh, в зависимости от того, что из них больше.</p></li>
+            <li><p><strong>%</strong> -  процент относительно другого значения.</p></li>
+          </ul>
+        <!-- Пункт "Селекторы" -->
+          <section class="selector"><h3 id="#">СЕЛЕКТОРЫ</h3></div>
+            <h4 class="#">Виды селекторов</h4>
+              <div class="#">
+                <ul>
+                  <li><p>Селекторы типа элемента - свойства для каждого правила применяются к каждому элементу, например:<code> h1 </code>или<code> p </code>, <code>p{color:navy;}</code>. <a href="example/front-example_step_3.html#selector_element"> Ссылка на пример</a>.</p></li>
+                  <li><p>Сгруппированные селекторы - выбор элемента на основе группы селекторов, выбранные элементы разделяются запятой - <code>p, ul, li, td {color:navy;}</code></p></li>
+                  <li><p>Селекторы ID, предназначается для элемента, который имеет уникальное имя - <code>p#id {color:navy;}</code>.</p></li>
+                  <li><p>Селекторы класса, предназначается для элемента, который принадлежит к определенному классу - <code>p.class {color:navy;}</code></p></li>
+                  <li><p>Селекторы потомков (child selectors) - <code>p ul {color:navy;}</code></p></li>
+                  <li><p>Дочерний селектор, указывают только на прямых потомков элемента, между которыми не может быть других иерархических уровней  - <code>p>ul {color:navy;}</code></p></li>
+                  <li><p>Селекторы ближайших братьев и сестер (next-sibling), предназначается для элемента, который идет непосредственно после другого элемента с тем же родителем - <code>p+ul {color:navy;}</code>.</p></li>
+                  <li><p>Селекторы последующих братьев и сестер (following-sibling), предназначается для элемента, который идет после другого элемента с тем же родителем - <code>p~ul {color:navy;}</code>.</p></li>
+                  <li><p>Универсальные селекторы, соответствует любому элементу - <code>p * {color:navy;}</code></p></li>
+                  <li><p>Селекторы псевдоклассов,отслеживание состояний элементов, обозночаются двоеточием (:)- <code>li:first-child</code>.<br>Основные селекторы псевдоклассов (указаны в обязательном порядке для элементов):</p>
+                    <ul>
+                      <li>
+                        <p><code>:link</code> - применяет стиль к неактивным ссылкам. Является псевдоклассом для ссылок.</p>
+                      </li>
+                      <li>
+                        <p><code>:visited</code> - применяет стиль, на которых выполнен щелчок ЛКМ. Могут использовать только следующие свойства <code>color, background-color, border-color, outline-color</code>. Является псевдоклассом для ссылок.</p>
+                      </li>
+                      <li>
+                        <p><code>:target</code> - идентификатор фрагмента</code>. Является псевдоклассом для ссылок (местоположения).</p>
+                      </li>
+                      <li>
+                        <p><code>:focus</code> - применяется, если элемент выбран и готов к вводу.Является псевдоклассом действия.</p>
+                      </li>
+                      <li>
+                        <p><code>:hover</code> - применяется, если указатель мыши находится над элементом.Является псевдоклассом действия.</p>
+                      </li>
+                      <li>
+                        <p><code>:active</code> - применяется, когда элемент участвует в процессе нажатия или касания. Является псевдоклассом действия.</p>
+                      </li>
+                      <li>
+                        <p><code>:root, :empty, :first-child, :last-child, :only-child, :first-of-type, last-of-type, :only-of-type, :nth-child(), :nth-last-child(), :nth-of-type(), :nth-lasat-of-type</code> - применяются для выбора элемента в зависимости от его места в структуре документа.Являются структурными псевдоклассами.</p>
+                      </li>
+                      <li>
+                        <p><code>:enabled, :disabled, :checked</code> - применяются к состояниям, типичным для ввода формы.Являются псевдоклассами ввода.</p>
+                      </li>
+                      <li>
+                        <p><code>:enabled, :disabled, :checked</code> - применяются к состояниям, типичным для ввода формы.Являются псевдоклассами ввода.</p>
+                      </li>
+                      <li>
+                        <p><code>:lang()</code> - лингвистический псевдокласс.</p>
+                      </li>
+                      <li>
+                        <p><code>:not()</code> - логический псевдокласс.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><p>Селекторы псевдоэлементов, вставляют в структуру документа вымышленные элементы, обозначаются двойным двоеточием (::) - <code>p::first-line{letter-spacing:9px;}</code>. Селектор псевдоэлемента указывается после целевого элемента без пробела, с обязательным применением свойства <code>content</code>,  <br>Основные селекторы псевдоэлементов:</p>
+                    <ul>
+                      <li><p><code>::first-line</code>- задает правило стиля для первой строки указанного элемента. Относится только к: <code>color, font properties, background properties, word-spacing, letter-spacing, text-decoration, vertical-align, text-transform, line-height</code>.</p>
+                      </li>
+                      <li><p><code>::first-letter</code>- задает правило стиля для первой буквы указанного элемента. Относится только к: <code>color, font properties, background properties, letter-spacing, word-spacing, text-decoration, vertical-align (если нет float), text-transform, padding properties, margin properties, border properties, float, line-height</code>.</p>
+                      </li>
+                      <li><p><code>::before</code> и <code>::after</code> - добавление сгенерированного контента до или после выбранного элемента  - <code>p.warning::before{content:url(image.png);}</code>.</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><p>Селекторы атрибутов,выбирают элементы на основе имен или значений атрибутов. <br>Основные селекторы атрибутов:</p>
+                    <ul>
+                      <li><p><code>element[атрибут]</code>- простой селектор атрибута выбирает целевые элементы с определенным атрибутом независимо от его назначения.</p>
+                      </li>
+                      <li><p><code>element[атрибут="точное значение"]</code>- селектор точного значения атрибута выбирает целевые элементы с определенным значением атрибута.</p>
+                      </li>
+                      <li><p><code>element[атрибут~="значение"]</code>- селектор частичного значения атрибута, позволяет указать одну часть из значения атрибута.</p>
+                      </li>
+                      <li><p><code>element[атрибут|="значение"]</code>- селектор значения атрибута, разделенного дефисами, выбирает разделенные дефисами значения атрибута.</p>
+                      </li>
+                      <li><p><code>element[атрибут^="первая часть значения"]</code>- селектор значения атрибута начальной подстроки.</p>
+                      </li>
+                      <li><p><code>element[атрибут$="последняя часть значения"]</code>- селектор значения атрибута последней подстроки.</p>
+                      </li>
+                      <li><p><code>element[атрибут*="любая часть значения"]</code>- селектор значения атрибута любой подстроки.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            <h4 class="#">Специфичность</h4>
+              <div class="#"> <p>Порядок и соотношение весов селекторов:</p>
+                <ul>
+                  <li>
+                    <p><strong>встроенные стили</strong> более специфичны чем...(1000)</p>
+                  </li>
+                  <li>
+                    <p><strong>селекторы id</strong> более специфичны чем...(100)</p>
+                  </li>
+                  <li>
+                    <p><strong>селекторы класса</strong> более специфичны чем... (10)</p>
+                  </li>
+                  <li>
+                    <p><strong>индивидуальные селекторы элементов</strong> (1).</p>
+                  </li>
+                </ul>
+              </div>
+          </section>
+        <!-- Форматирование текста -->
+          <section class="#"><h2>Форматирование текста</h2>
+            <h4 class="#">Свойства шрифтов</h4>
+              <div class="#"><p><b>Ключевые слова для свойств CSS:</b></p>
+                  <ul>
+                    <li><code>initial</code><p>Является широко применяемым соглашением, например стандарт определяет значения атрибутов id, class, rel для определения людей, организаций, событий, продуктов и др.</p></li>
+                    <li>Microdata<p>Является HTML-стандартом WHATWG (Web Hypertext Application Technology Working Group, Рабочая группа по технологиям веб-гипертекста), который применяет специфические атрибуты: item-scope, itemtype, itemprop, itemid, itemref. Данный стандарт в 2013 году исключен из HTML5</p></li>
+                    <li>RDFa<p>Является HTML-стандартом (Resource Description Framework in Attributes, Фреймворк описания ресурсов в атрибутах), который применяет специфические атрибуты: vocab, typeof, property, resourse, prefix.</p></li>
+                    <li>RDFa Lite<p>Является упрощенной версией RDFa.</p></li>
+                    <li>JSON-LD<p>Другой подход в части размещения типов объектов и их свойств в удаленном из разметки сценарии (JavaScript Object Notation to serialize Linked Data, запись объекта JavaScript, применяемая для сериализации связанных данных).</p></li>
+                  </ul>
+              </div>
+              <div class="#"> 
+                <ul>
+                 <li><p><strong class="chapter">Общие семейства шрифтов:</strong> - браузер выбирает доступный шрифт из стилистической категории:</p>
+                   <ul>
+                     <li><p><strong>serif</strong> - шрифты с засечками.</p></li>
+                     <li><p><strong>sans-serif</strong> - шрифт без засечек.</p></li>
+                     <li><p><strong>monospace</strong> - моноширный шрифт, все символы занимают в строке одинаковое пространство.</p></li>
+                     <li><p><strong>cursive</strong> - курсивный шрифт.</p></li>
+                     <li><p><strong>fantasy</strong> - декоративные шрифты (для заголовков).</p></li>
+                   </ul>
+                   <li><p><strong class="chapter">Требования к синтаксису:</strong></p>
+                     <ul>
+                       <li><p>все названия шрифтов, за исключением общих семейств шрифтов, должны быть написаны с заглавной буквы;</p></li>
+                       <li><p>используйте запятые для разделения нескольких названий шрифтов;</p></li>
+                       <li><p>имена шрифтов, содержащие пробелы, должны заключаться в кавычки.</p></li>
+                     </ul>
+                   </li>
+                   <li><p><strong class="chapter">font-family</strong> - выбор семейства шрифтов. Относится к CSS2.1.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> один или несколько шрифтов или названия общих шрифтов, разделенные запятыми.</p></li>
+                       <li><p><strong>По умолчанию:</strong> зависит от браузера.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                   </li>
+                   <li><p><strong  class="chapter">font-size</strong> - указание размера шрифтов. Относится к CSS2.1. Задать размер можно с помощью одной из единиц длины CSS (em, rem), с помощью процентов, с помощью абсолютных ключевых слов (small).</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> единица длины|процентное соотношение|xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger.</p></li>
+                       <li><p><strong>По умолчанию:</strong> medium.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                     <p>В CSS3 добавлено свойство font-size-ajdjust, которое позволяет отрегулировать высоту резервного шрифта по x-высоте отобранного шрифта.</p>
+                   </li>
+                   <li><p><strong  class="chapter">font-weight</strong> - "жирность" шрифтов. Относится к CSS2.1.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> normal|bold|bolder|lighter|100|200|300|400|500|600|700|800|900.</p></li>
+                       <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                   </li>
+                   <li><p><strong class="chapter">font-style</strong> - стиль текста, определяет вертикальны или наклонны очертания букв (курсив). Относится к CSS2.1.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> normal|italic|oblique.</p></li>
+                       <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                   </li>
+                   <li><p><strong class="chapter">font-variant</strong> - капитель (small-caps), дизайн в котором строчные знаки выглядят как уменьшенные заглавные. Относится к CSS2.1. </p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> normal|small-caps.</p></li>
+                       <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                     <p>font-variant предоставляет в CSS3 доступ к шрифтам со специальными символами - глифами:</p>
+                     <ul>
+                       <li>
+                         <p><strong>font-variant-ligatures</strong> - глиф, объединяющий в однин символ два или более символов (список значений можно найти на www.w3.org)</p>
+                       </li>
+                       <li>
+                         <p><strong>font-variant-caps</strong> - позволяет из набора символов шрифта выбирать глифы капители. Используются значения: all-smallcaps, применение капители вместо строчных и прописных букв;unicase, применение капители только к символам в верхнем регистре; titling-caps,применение капители для заголовков.</p>
+                       </li>
+                       <li>
+                         <p><strong>font-variant-position</strong> - из набора выбирает глифы верхнего индекса (super) или нижнего (sub), если они доступны.</p>
+                       </li>
+                       <li>
+                         <p><strong>font-variant-numeric</strong> - позволяет выбирать различные стили числовых символов.</p>
+                       </li>
+                       <li>
+                         <p><strong>font-variant-alternates</strong> - предлагают для одного символа несколько вариантов написания.</p>
+                       </li>
+                       <li>
+                         <p><strong>font-variant-east-asian</strong> - позволяет выбирать азиатские глифы.</p>
+                       </li>
+                     </ul>
+                   </li>
+                   <li><p><strong class="chapter">font-stretch</strong> - сжатый и разреженный шрифт. Относится к CSS2.1.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> normal|ultra-condenced|extra-condenced|condenced|semi-condenced|expanded|extra-expanded|ultra-expanded.</p></li>
+                       <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                   </li>
+                   <li><p><strong class="chapter">font</strong> - сокращенное свойство, которое объединяет в одно правило все связанные со шрифтом свойства. Относится к CSS2.1.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> font-style font-weight font-variant font-stretch font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar.</p></li>
+                       <li><p><strong>По умолчанию:</strong> для каждого свойства в правиле зависит от значения, заданного по умолчанию.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                     <p>В CSS3 добавлены свойства:<br> font-kerning, которое позволяет применять метаданные о кернинге шрифта (normal), отключать (none), или оставлять на усмотрение браузера (auto);<br>
+                       font-feature-settings, которое позволяет управлять расширенными типографскими функциями в шрифтах OpenType.
+                     </p>
+                   </li>
+                   <li><p><strong class="chapter">color</strong> - изменение цвета. Свойство применяется для изменения цвета элемента на переднем плане (не фона), передний план включает текст и его границы.</p>
+                     <ul>
+                       <li><p><strong>Значения:</strong> значение цвета (название или числовое значение).</p></li>
+                       <li><p><strong>По умолчанию:</strong> зависит от браузера и предпочтений пользователя.</p></li>
+                       <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                       <li><p><strong>Наследование:</strong> да.</p></li>
+                     </ul>
+                     <p>В CSS2 определены 17 стандартных названий цветов: black,lime,silver,olive,gray,yellow,white,navy,maroon,blue,red,teal,purple,aqua,fuchsia,orange,green;<br>
+                       в CSS3 возможно задавать значения по названию 140 цветов.
+                     </p>
+                   </li>
+                 </div>
+            <h4>Настройки текстовых строк</h4>
+              <ul>
+                <li><p><strong class="chapter">Свойство line-height</strong> - высота строки, определяет минимальное расстояние между базовыми линиями строк текста</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> number|lenght measurement|percentage|normal.</p></li>
+                    <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                  <li><p><strong class="chapter">Свойство text-ident</strong> -отступ первой строки текста на указанную величину.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> величина|процентное соотношение.</p></li>
+                      <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                      <li><p><strong>Применение:</strong> к блочным контейнерам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-align</strong> - горизонтальное выравнивание текста.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> left|right|center|justify|start|end.</p></li>
+                      <li><p><strong>По умолчанию:</strong> start.</p></li>
+                      <li><p><strong>Применение:</strong> к блочным контейнерам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                    <p>В CSS3 добавлены значения start и end, которые определяют сторону строки, по которой проводится выравнивание текста (для языков, написание которых осуществляется справа налева или по вертикали).
+                    </p>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-decoration</strong> - украшательства текста.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> none|underline(подчеркивание)|overline(надчеркивание)|line-through (перечеркивание)|blink (мерцание).</p></li>
+                      <li><p><strong>По умолчанию:</strong> none.</p></li>
+                      <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                      <li><p><strong>Наследование:</strong> нет, но поскольку строки проходят через дочерние элементы, они могут иметь такой вид, как будто также изменены.</p></li>
+                    </ul>
+                    <p>В CSS3 добавлены значения text-decoration-line, text-decoration-color, text-decoration-style, text-decoration-skip, text-underline-position.
+                    </p>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-transform</strong> - изменение вида заглавных букв.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> none|capitalize(первая буква заглавная)|lowercase (все буквы строчные)|uppercase (все буквы заглавные)|full-width (выбирает из шрифта полноразмерную версию символа).</p></li>
+                      <li><p><strong>По умолчанию:</strong> none.</p></li>
+                      <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство letter-spacing</strong> - вставка пробелов между буквами.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> величина|normal.</p></li>
+                      <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                      <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство word-spacing</strong> - вставка пробелов между словами.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> величина|normal.</p></li>
+                      <li><p><strong>По умолчанию:</strong> normal.</p></li>
+                      <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-shadow</strong> - добавление к тексту "тени".</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> 'смещение по горизонтали' 'смещение по вертикали' 'радиус размытия' 'цвет'|none.</p></li>
+                      <li><p><strong>По умолчанию:</strong> none.</p></li>
+                      <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                      <li><p><strong>Наследование:</strong> да.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство white-space</strong> - определяет, каким образом в макете обрабатываются пробелы из исходного кода.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство vertical-align</strong> - определяет выравнивание по вертикали базовой линии строчного элемента относительно базовой линии окружающего текста. Также применяется в ячейке таблицы td.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство word-break и line-break</strong> - влияют на результат переноса текста в словах и строках соответственно при использовании разных языков.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-justify</strong> - определяет способ добавления пробела внутри и между словами, если свойству text-align элемента присвоено justify.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство text-align-last</strong> - указывает каким образом необходимо выравнивать последнюю строку блока текста, если свойству text-align элемента присвоено justify.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство tab-size</strong> - задает длину символа табуляции с использованием количества символов или величины длины.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> <i>требует доработки</i>.</p></li>
+                      <li><p><strong>По умолчанию:</strong>.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство hyphens</strong> - управляет переносом текста.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> manual (перенос слов в которых уже есть пробел)|auto(управление браузером)|none.</p></li>
+                      <li><p><strong>По умолчанию:</strong>требует доработки.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство overflow-wrap</strong> - определяет, разрешено ли браузерам разбивать слова, чтобы текст мог поместиться в ограниченной по размеру рамке.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> требует доработки.</p></li>
+                      <li><p><strong>По умолчанию:</strong>требует доработки.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                  <li><p><strong class="chapter">Свойство hanging-punctuation</strong> - определяет, может ли знак препинания выходить за пределы поля строки элемента в начале и в конце строки.</p>
+                    <ul>
+                      <li><p><strong>Значения:</strong> требует доработки.</p></li>
+                      <li><p><strong>По умолчанию:</strong>требует доработки.</p></li>
+                      <li><p><strong>Применение:</strong>.</p></li>
+                      <li><p><strong>Наследование:</strong>.</p></li>
+                    </ul>
+                  </li>
+                </ul>
+            <h4 class="#">Маркированный и нумерованный список</h4>
+              <ul>
+                <li><p><strong class="chapter">Свойство list-style-type</strong> - выбор маркера списка</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> none|disk(точка)|circle (круг)|square (квадратик)|decimal(1,2,3...)|decimal-leading-zero (01,02,03...)|lower-alpha (a,b,c,d...)|upper-alpha(A,B,C,D...)|lower-latin (a,b,c,d...)|upper-latin(A,B,C,D...)|lower-roman (i,ii,iii,iv)|upper-roman(I,II,III,IV...)|lower-greek.</p></li>
+                    <li><p><strong>По умолчанию:</strong> disk.</p></li>
+                    <li><p><strong>Применение:</strong> к ul, ol, li (или к элементам, чьим отображаемым значением является элемент списка).</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство list-style-position</strong> - положение маркера</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> inside|outside|hanging</p></li>
+                    <li><p><strong>По умолчанию:</strong> outside.</p></li>
+                    <li><p><strong>Применение:</strong> к ul, ol, li (или к элементам, чьим отображаемым значением является элемент списка).</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                  <p>Свойства стиля списка применяются к элементам, имеющим значение list-item у свойства display.</p>
+                </li>
+                <li><p><strong class="chapter">Свойство list-style-image</strong> - создание собственных маркеров</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> url(местоположение)|none</p></li>
+                    <li><p><strong>По умолчанию:</strong> outside.</p></li>
+                    <li><p><strong>Применение:</strong> к ul, ol, li (или к элементам, чьим отображаемым значением является элемент списка).</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство list-style</strong> - обобщение значения типа, позиции и изображения маркера списка через пробел.</p>
+                </li>
+              </ul>
+            <h4 class="#">Цвета и фоны</h3>
+              <ul>
+                <li><p><strong class="chapter">Свойство border-color</strong> - устанавливает цвет для рамки вокруг элемента.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> значение цвета (название или числовое значение).</p></li>
+                    <li><p><strong>По умолчанию:</strong> значение цвета элемента.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><p><strong class="chapter">Свойство background-color</strong> - устанавливает цвет фона.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> значение цвета (название или число)| transparent.</p></li>
+                    <li><p><strong>По умолчанию:</strong> transparent.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><p><strong class="chapter">Свойство background-clip</strong> - обрезка фона. Относится к CSS3. </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> border-box|padding-box|content-box.</p></li>
+                    <li><p><strong>По умолчанию:</strong> border-box.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><p><strong class="chapter">Свойство opacity</strong> - управление непрозрачностью. Относится к CSS3. Значение непрозрачности применяется ко всему элементу - как к его переднему плану, так и к фону.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> число (от 0 до 1).</p></li>
+                    <li><p><strong>По умолчанию:</strong> 1.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><p><strong class="chapter">Свойство background-image</strong> - добавляет фоновое изображение к любому элементу.</p>
+                  <ul>
+                    <li><p><strong>Значение:</strong> URL (местоположение изображения)|none.</p></li>
+                    <li><p><strong>По умолчанию:</strong> none.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background-repeat</strong> - изменяет порядок расположения мозаичных изображений.</p>
+                  <ul>
+                    <li><p><strong>Значение:</strong> repeat|no-repeat|repeat-x|repeat-y|space (четное число изображений с пробелами)|round (сжимает изображение для размещения четное число раз).</p></li>
+                    <li><p><strong>По умолчанию:</strong> repeat.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background-position</strong> - задает положение фонового исходного изображения. Способы позиционирования: 1) c помощью ключевых слов (обычно применяемых парами) - относительно внешних краев видимой области фона; 2) размер в длину - с использованием величин длины (px, em), указывает величину смещения от верхнего левого угла элемента до верхнего левого угла исходного фонового изображения (горизонтальное значение приводится в начале); 3) процентные значения - представлены горизонтальными/вертикальными парами.</p>
+                  <ul>
+                    <li><p><strong>Значение:</strong> размер в длину|процентные значения|left|center|right|top|bottom.</p><p>Спецификация CSS3 предлагает дополнительно задавать значения с указанием смещения изображения от определенного края области фона с помощью ключевых слов: edge-keyword offset.</p></li>
+                    <li><p><strong>По умолчанию:</strong> 0% (left top).</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background-origin</strong> - задает начальное положение фонового изображения и определяет границы области расположения фона (аналогично background-clip для цветового фона).</p>
+                  <ul>
+                    <li><p><strong>Значение:</strong>border-box|padding-box|content-box.</p></li>
+                    <li><p><strong>По умолчанию:</strong> padding-box.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background-attachment</strong> - прикрепляет фоновое изображение к контенту.</p>
+                  <ul>
+                    <li><p><strong>Значение:</strong>scroll|fixed|local.</p></li>
+                    <li><p><strong>По умолчанию:</strong> scroll.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background-size</strong> - изменяет размеры фонового изображения.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>длина|процентное значение|auto|cover(изображение захватывает всю область расположения фона)|contain (задает изображению размеры, чтобы оно могло полностью разместиться в области позиционирования либо по ширине либо по высоте).</p></li>
+                    <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство background</strong> - для указания всех стилей фона.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>background-color|background-image|background-repeat|background-attachment|background-position|background-clip|background-origin|background-size.</p></li>
+                    <li><p><strong>По умолчанию:</strong> индивидуальные свойства каждого значения.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">background-image:linear-gradient()</strong> - определяет угол линии градиента и одну или несколько точек вдоль той линии, где расположен чистый цвет (стоп-цвета).</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>в градусах (ndeg), color1, color2| ключевые слова (to top, to right, to bottom, to left), color1, color2.</p><p>Для бесконечного повторения цветов добавлется префикс reapiting-linear-gradient.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">background-image:radial-gradient()</strong> - исходят из точки и распространяются в виде круга водоль градиентного луча, необходимо как минимум два цвета.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>form (circle, ellipse), color1, color2|размер (px,%), color1, color2|расположение(синтаксис background-position).</p><p>Для бесконечного повторения цветов добавлется префикс reapiting-radial-gradient.</p></li>
+                  </ul>
+                  <li>
+                    <p>Градиенты лучше создавать с использованием инструментов для разработки градиентов либо специальных бибилиотек градиентов.</p>
+                  </li>
+                </li>
+              </ul>
+
+                <!-- Улучшение доступности ARIA -->
+            <h4 class="#">Улучшение доступности ARIA</h4>
+                <div><p><b>Улучшение доступности документа с помощью ARIA(Accessible Rich Internet Application, Доступные многофункциональные интернет-приложения).</b></p>
+                <p>Стандартизированный набор атрибутов, использование которых упрощает навигацию по страницам и применение интерактивных функций.Определяет роли, состояния и свойства, которые могут добавлять в разметку и сценарии для поддержки более насыщенной семантической информации Поддерживается Рабочей группой инициативы доступности веб-сайтов (WAI).</p>
+                <p>Роли описывают функции или цели элемента в контексте документа.Являются подсказкой для ассистивных технологиях. К ролям относятся: alert, button, dialog, slider, menubar, navigation, banner, contentinfo, complementary, main.Пример применения - < ul id="table" role="toolbar" >.</p><p>Состояния и свойства обозначаются атрибутами с префиксом aria-, например: aria-disabled, aria-describedby.</p></div>
+          </section>
+        <!-- Подключение внешней таблицы стилей -->
+          <section class="#"><h2>Подключение внешней таблицы стилей</h2>
+            <ul>
+              <li>
+                <p>Применение элемента <code>link</code> - определяет связь между текущим документом и внешним ресурсом, включается в заголовок текущего документа. Можно включить несколько элементов link, последняя ссылка переопределит предыдущие настройки.</p><p>Атирбуты:</p>
+                <ul>
+                  <li>
+                    <p><code>rel="stylesheet"</code> - определяет отношение связанного документа к текущему документу (для ссылки на таблицу стилей всегда "stylesheet").</p>
+                  </li>
+                  <li>
+                    <p><code>href="url-ссылка"</code> - указывает местоположение таблицы стилей(*.css).</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Применение at-правила <code>@import</code> - позволяет добавить таблицу стилей либо во внешнем документе таблицы стилей, либо в элементе style. В таблице стилей at-правило приводится в начале таблицы стилей перед любыми селекторами.</p>
+              </li>
+              <li>
+                <p>Применение at-правила <code>@import</code> с медиазапросами - позволяет ограничить импорт таблицы стилей определенными типами мультимедиа (например, экран, печать) или средами просмотра (ориентация, размер экрана), медиазапросы записываются через запятую после правила @import, пример <code>@import url(table.css) screen and (max-width:320px)</code>.</p>
+              </li>
+              <li>
+                <p>Применение модульных таблиц стилей с использованием правила <code>@import</code> - для использование заранее разработанных стилевых решений, рекомендуется их скомпилировать с помощью специальных инструментов - CSS-препроцессоров, например LESS и Sass</code>.</p>
+              </li>
+            </ul>
+          </section>
+        <!-- Переходы, трансформация и анимация-->
+          <section><h3>Переходы, трансформация и анимация.</h3>
+            <div><h4>Переходы, модуль CSS Transitions</h4>
+              <p>Переходы требуют указания начального и конечного состояний, конечное состояние вызывается изменением состояния - таким, как :hover, :focus или :active (либо javaScript)</p>
+            </div>
+            <div><h4>Трансформация, модуль CSS Transforms</h4>
+            </div>
+            <div><h4>3D-преобразования и CSS-анимация</h4>
+            </div>
+          </section>
+      </article>
+  <!-- Второй раздел "Layouts CSS3"-->
+      <article class="main-step3_layouts"> <h2 class="layouts__title">Layouts  CSS3</h2>
+      <!-- Второй раздел Блочная модель-->
+          <section class="block_model">
+            <h4 class="#">Блочная модель</h4>
+            <ul>
+              <li><p><strong class="chapter">Свойства <code>width</code> и <code>height</code>:</strong> - указание размеров блока контента. Возможно по двум моделям: 1)модель content-box 2) модель border-box (с определением свойства box-sizing).</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> длина|процентное соотношение|auto.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к элементам уровня блока и заменяемым строчным элементам (например, изображениям).</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойство <code>box-sizing</code>:</strong> - указание размеров блока контента с отступами и границей.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> content-box|border-box (предпочтительно для адаптивного дизайна).</p></li>
+                  <li><p><strong>По умолчанию:</strong> content-box.</p></li>
+                  <li><p><strong>Применение:</strong> к блочным элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойства <code>max-width, min-width</code> и <code>max-height, min-height</code>:</strong> - ограничение размеров блока элемента. Применяется в модели content-box.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> длина|процентное соотношение|none.</p></li>
+                </ul>
+              <li><p><strong class="chapter">Свойство <code>overflow</code>:</strong> - обработка содержимого элемента с учетом его размеров.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> visible (содержимое выходит за поле элемента)|hidden (содержимое, которое не помещается в блок, не отображается за пределами области контента элемента)|scroll (добавляются полосы прокрутки)|auto (браузер решает как обрабатывать переполнение).</p></li>
+                  <li><p><strong>По умолчанию:</strong> visible.</p></li>
+                  <li><p><strong>Применение:</strong> ко блочным элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+                <li><p><strong class="chapter">Отступы <code>padding-top, padding-right, padding-bottom, padding-left </code>:</strong> - указание размеров отступов.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> длина|процентное соотношение.</p></li>
+                    <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>padding</code>.</p>
+                </li>
+                <li><p><strong class="chapter">Границы <code>border-top-style, border-right-style, border-bottom-style, border-left-style </code>:</strong> - указание на границы каждой из сторон элемента.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> none|solid|hidden|dotted|dashed|double|groove|ridge|inset|outset.</p></li>
+                    <li><p><strong>По умолчанию:</strong> none.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>border-style</code> с теми же значениями.</p>
+                </li>
+                <li><p><strong class="chapter">Цвет границ <code>border-top-color, border-right-color, border-bottom-color border-left-color </code>:</strong> - указание цвета границы каждой из сторон элемента.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> имя цвета или значения RGB/HSL|transparent (позволяет фону отображаться сквозь границу).</p></li>
+                    <li><p><strong>По умолчанию:</strong> значение color для выбранного элемента.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>border-color</code> с теми же значениями.</p>
+                </li>
+                <li><p><strong class="chapter">Контуры <code>outline-style, outline-width, outline-color, outline-offset, outline</code>:</strong> - в отличие от грнаиц не рассчитываются по ширине блока элемента.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> для outline-style, outline-width аналогичны свойствам границ| для outline-color - дополнительно используется значение по умолчанию invert (цвет инверсный к цвету фона)</p></li>
+                    <li><p><strong>Значение outline-offset (перемещает контур за границу на указанную величину):</strong> длина, по умолчанию - 0.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>outline</code> включает outline-style, outline-width, outline-color.</p>
+                </li>
+                <li><p><strong class="chapter">Сокращенный способ задать свойства границ <code>border-top, border-right, border-bottom, border-left</code> (или для всех сторон - <code>border</code>):</strong> </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> стиль границы, толщина границы, цвет границы.</p></li>
+                    <li><p><strong>По умолчанию:</strong> для каждого свойства.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство <code>border-radius (border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius)</code>:</strong> </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>длина|процентное соотношение .</p></li>
+                    <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Свойство <code>border-image-*</code>:</strong> </p>
+                  <ul>
+                    <li><p><strong>source</strong> - задает расположение изображения.</p></li>
+                    <li><p><strong>slice</strong> - разделяет изображение на 9 секций с помощью задания размеров смещения.</p></li>
+                    <li><p><strong>width</strong> - задает толщину границы.</p></li>
+                    <li><p><strong>repeat</strong> - определяет, будет ли изображение растягиваться по сторонам или повторяться.</p></li>
+                    <li><p><strong>outset</strong> - отодвигает границу от контента на заданную величину.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>border-image</code> имеет значения: начальная секция|толщина|смещение повтор.</p>
+                </li>
+                <li><p><strong class="chapter">Поля <code>margin-top, margin-right, margin-bottom, margin-left</code>:</strong> </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>длина|процентное соотношение|auto.</p></li>
+                    <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                  <p>Существует также сокращенное свойство <code>margin</code> имеет те же свойства что и у других полей.</p>
+                  <p>Особенностью применения верхних и нижних полей соседних элементов является их возможность коллапсировать (перекрываться), то есть между элементами остается только то поле. которое имеет наибольшее значение.</p>
+                </li>
+                <li><p><strong class="chapter">Свойство <code>display</code>:</strong> </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>inline|block|run-in|flex|grid|flow|flow-root|list-item|table|table-row-group|table-header-group|table-footer-group|table-row|table-cell|table-column-group|table-column|table-caption|ruby|ruby-base|ruby-text|ruby-base-container|ruby-text-container|inline-block|inline-table|inline-flex|inline-grid|contens|none (удаляет контент вместе с пространством).</p></li>
+                    <li><p><strong>По умолчанию:</strong> inline.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> да.</p></li>
+                  </ul>
+                </li>
+                <li><p><strong class="chapter">Тени для блока <code>box-shadow</code>:</strong> </p>
+                  <ul>
+                    <li><p><strong>Значения:</strong>'смещение по горизонтали' 'смещение по вертикали' 'величина размытия' 'величина разброса' color inset|none.</p></li>
+                    <li><p><strong>По умолчанию:</strong> none.</p></li>
+                    <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+                </li>
+            </ul>
+          </section>
+      <!-- Второй раздел Floats-->
+          <section class="floats"><h4 class="#">Плавающие элементы и позиционирование</h4>
+            <ul>
+              <li><p><strong class="chapter">Режим плавания <code>float</code>:</strong> - позволяет смещать элемент влево или вправо, а также вызывает обтекание его окружающим текстом.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> left|right|none.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Правила применения "плавающих" элементов:</p>
+                <ol>
+                  <li>"Плавающий" элемент удаляется из потока, но влияет на окружающий его контент.</li>
+                  <li>"Плавающий" элемент размещается в области контента элемента, вокруг него могут задаваться поля.</li>
+                  <li>Для "плавающих" элементов необходимо обязательно задавать ширину (свойство width), за исключением img.</li>
+                  <li>"Плавающие" текстовые элементы ведут себя как блочные, при этом верхние и нижние поля не коллапсируют.</li>
+                  <li>"Плавающие" элементы не перемещаются выше места своего размещения в нормальном потоке.</li>
+                </ol>
+              </li>
+              <li><p><strong class="chapter">Очистка "плавающих" элементов <code>clear</code>:</strong> - позволяет отключать обтекание текстов и возвращаться к обычному потоку (для элемента следующего за "плавающим").</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> left|right|both|none.</p></li>
+                  <li><p><strong>По умолчанию:</strong> none.</p></li>
+                  <li><p><strong>Применение:</strong> только к элементам блочного уровня.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свободное обтекание текстом CSS-форм <code>shape-outside</code>:</strong> - позволяет изменять форму обтекающего текста на круглую, элипсовидную, многоугольную и др.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> none|circle(радиус)|ellipse(rx ry at x y)|polygon(x1 y1 x2 y2...)|url()|[margin-box|padding-box|content-box].</p></li>
+                  <li><p><strong>По умолчанию:</strong> none.</p></li>
+                  <li><p><strong>Применение:</strong> к "плавающим" элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойство <code>shape-margin</code>:</strong> - позволяет добавлять свободное пространство между плавающим элементом и текстом.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> длина|процентное соотношение.</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                  <li><p><strong>Применение:</strong> к "плавающим" элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Для изображений имеющих несколько уровней прозрачности возможно использовать свойство <code>shape-image-threshold</code>, которое определяет порог прозрачности (значения от 0 до 1).</p>
+              </li>
+              <li><p><strong class="chapter">Позиционирование <code>position</code>:</strong> - позволяет позиционировать элементы, относительно того места, где они появляются в потоке, или могут быть удалены и размещены в определенном месте на странице.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> static (размещение элемента соответствует нормальному потоку)|relative (перемещение элемента относительно его места в потоке)|absolute (элемент удаляется из потока и позиционируется относительно области просмотра или содержащего его элемента)|fixed (фиксация элемента в одной позиции окна просмотра даже при прокрутке документа)|sticky (элемент позиционируется относительно, пока не будет прокручен до указанного положения, после чего становится фиксированным).</p></li>
+                  <li><p><strong>По умолчанию:</strong> static.</p></li>
+                  <li><p><strong>Применение:</strong> ко всем элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Значение relative без указания позиции применяется для организации контекста позиционирования для блока, содержащего элемент, который необходимо абсолютно позиционировать.</p>
+              </li>
+              <li><p><strong class="chapter">Указание позиции <code>top, right,bottom,left</code>:</strong> - указание фактического положения элемента.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> длина|процентное соотношение|auto.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к позиционируемым элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойство <code>z-index</code>:</strong> - изменение порядка наложения элементов при перекрывающем позиционировании.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> число|auto.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к позиционируемым элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+      <!-- Второй раздел Flexbox-->
+          <section class="flexbox"><h4 class="#">Flexbox</h4>
+            <ul>
+              <li>
+                <p><strong class="chapter">Модуль <code>CSS Flexible Layout</code>:</strong> - CSS-модуль макета гибкого контейнера (Flexbox) предназначен для размещения компонентов веб-страниц на основе гибкого макета (flex-макета) по одной оси вертикально или горизонтально (ось может складываться несколько раз).</p>
+                <p>Кроме указанного модуля для макетирования в CS3 используется многоколоночный макет - модуль Multi-column Layout Module, который имеет инструменты для разбивки текстового контента на несколько столбцов.</p>
+              <li><p><strong class="chapter">Настройка flex-контейнера, свойство <code>display:inline-flex (flex)</code>:</strong> - генерирует линейный уровень flex-контейнера.</p>
+              </li>
+              <li><p><strong class="chapter">Задание направления потока <code>flex-direction</code>:</strong></p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> row|column|row-reverse|column-reverse.</p></li>
+                    <li><p><strong>По умолчанию:</strong> row.</p></li>
+                    <li><p><strong>Применение:</strong> к flex-контейнерам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+              </li>
+              <li><p><strong class="chapter">Разбивка группы элементов на несколько линий <code>flex-wrap</code>:</strong>.</p>
+                  <ul>
+                    <li><p><strong>Значения:</strong> nowrap|wrap|wrap-reverse.</p></li>
+                    <li><p><strong>По умолчанию:</strong> nowrap.</p></li>
+                    <li><p><strong>Применение:</strong> к flex-контейнерам.</p></li>
+                    <li><p><strong>Наследование:</strong> нет.</p></li>
+                  </ul>
+              </li>
+              <li><p><strong class="chapter">Совмещение свойств flex-direction и flex-wrap <code>flex-flow</code>:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> значение flex-direction|значение flex-wrap.</p></li>
+                  <li><p><strong>По умолчанию:</strong> row nowrap.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Выравнивание и распределение вдоль главной оси <code>justify-content</code>, применяется к контейнеру:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> flex-start|flex-end|center|space-between (первый и последний элементы размещаются по краям, остальные распределяются)|space-around (добавляет пространство слева и справа)</p></li>
+                  <li><p><strong>По умолчанию:</strong> flex-start.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Выравнивание и распределение вдоль поперечной оси <code>align-items</code>, применяется к контейнеру</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> flex-start|flex-end|center|baseline (выравнивание базовых линий элементов)|stretch(элементы растягиваются для заполнения поперечной оси)</p></li>
+                  <li><p><strong>По умолчанию:</strong> stretch.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Выравнивание и распределение вдоль поперечной оси <code>align-self</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> flex-start|flex-end|center|baseline (выравнивание базовых линий элементов)|stretch(элементы растягиваются для заполнения поперечной оси)</p></li>
+                  <li><p><strong>По умолчанию:</strong> stretch.</p></li>
+                  <li><p><strong>Применение:</strong> к элементам flex-контейнера.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Выравнивание и распределение нескольких flex-линий (только для wrap и wrap-reverse) <code>align-content</code>, распределяют дополнительное пространство вокруг нескольких линий</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> flex-start|flex-end|center|space-around|space-between|stretch</p></li>
+                  <li><p><strong>По умолчанию:</strong> stretch.</p></li>
+                  <li><p><strong>Применение:</strong> к многострочным flex-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Сокращенное свойство <code>flex</code> </strong>, указывает насколько элемент может увеличиваться и уменьшаться, и задает его начальный размер.Предпочтительно не менять свойства flex-grow flex-shrink flex-basis по отдельности</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> none|'flex-grow flex-shrink flex-basis'</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0 1 auto.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Сокращенные значения: flex:initial - равно flex:0 1 auto (препятствует растягиванию даже при наличии свободного пространства); flex:auto - равно flex: 1 1 auto (элементы полностью гибкие); flex:none - равно flex:0 0 auto (негибкий элемент); flex:целое число - равно flex:целое число 1 0px (элементы пропорциональны своим абсолютным значениям отностительно flex-grow)</p>
+              </li>
+              <li><p><strong class="chapter">Свойство растягивающихся элементов<code>flex-grow</code></strong>, определяет каким образом элемент можно растягивать.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> число.</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойство сжатия элементов<code>flex-shrink</code></strong>, определяет каким образом элемент можно сжимать.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> число.</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Свойство, определяющее начальный размер элемента, до его выравнивания, растягивания или сжатия,<code>flex-basis</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong>длина|процентное соотношение|content|auto.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Изменение порядка следования flex-элементов <code>order</code></strong>. Инструмент для адаптивного дизайна.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong>целое число.</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                  <li><p><strong>Применение:</strong> к flex-элементам и абсолютно позиционируемым дочерним элементам flex-контейнеров.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+      <!-- Второй раздел CSS Grid-->
+          <section class="grid"><h4 class="#">CSS Grid</h4>
+            <ul>
+              <li>
+                <p><strong class="chapter">Модуль <code>CSS GRID Layout</code>:</strong> - Процесс использования модуля CSS GRID Layout включает:.</p>
+                <ol>
+                  <li>
+                    <p>Применить свойство <code>display</code> для превращения элемента в grid-контейнер - его дочерние элементы автоматически превратятся в grid-элементы.</p>
+                  </li>
+                  <li>
+                    <p>Настройте для сетки столбцы и строки - задать явно и/или указать как они формируются "на лету".</p>
+                  </li>
+                  <li>
+                    <p>Присвоить каждому элементу сетки соответствующую область в сетке - если не присвоисть явно, элементы разместятся последовательно.</p>
+                  </li>
+                </ol>
+              </li>
+              <li><p><strong class="chapter">Объявление отображения сетки <code>grid (inline-grid)</code>:</strong>.</p></li>
+              <li><p><strong class="chapter">Определение дорожек сетки <code>grid-template-rows, grid-template-columns</code>:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> none|список размеров дорожек и (опционно) названий линий.</p></li>
+                  <li><p><strong>По умолчанию:</strong> none.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Каждой линии сетки присваивается номер: слева направо, сверх вниз положительные числа, справа налево снизу - отрицательные числа. Кроме этого каждой линии можно присвоить имя следующим образом <code>grid-template-rows:[header-start] 100px [content-start] 400px [footer-start] 100px</code>. Можно использовать несколько имен, указав их в одних квадратных скобках.</p>
+                <p>Значения размеров дорожки:</p>
+                <ul>
+                  <li>
+                    <p>Длины (px, em и др.).</p>
+                  </li>
+                  <li>
+                    <p>Процентные значения.</p>
+                  </li>
+                  <li>
+                    <p>Дробные единицу (fr) - позволяет объединять фиксированные и гибкие размеры дорожек, а также задавать пропорции размеров.</p>
+                  </li>
+                  <li>
+                    <p>auto, min-content, max-content - устанавливают размеры дорожек, исходя из контента.</p>
+                  </li>
+                  <li>
+                    <p>minmax(15em, 45em) - позволяет задавать ограничения размеров.</p>
+                  </li>
+                  <li>
+                    <p>fit-content().</p>
+                  </li>
+                  <li>
+                    <p>Функция repeat (количество повторений, шаблон размеров дорожек (20px 1fr)) с опциональными значениями: repeat(auto-fill, 10em - формирует строки каждые 10em, и auto-fit - аналогично, за исключением того, что из макета удаляются дорожки без контента.</p>
+                  </li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Назначение имен областям сетки <code>grid-template-areas</code>:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> none|набор имен областей сетки ("header header header" "aside main articale" "footer footer footer"). Если необходимо оставить ячейку без имени - вместо имени ставится точка или многоточие.</p></li>
+                  <li><p><strong>По умолчанию:</strong> none.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Сокращенное свойство<code>grid</code>:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> none|информация о строке/информация о столбце ([header-start] "header header header" 100px [content-start] "aside main articale" 400px [footer footer footer] 100px/[aside] 200px [main] 1fr [articale] 200px).</p></li>
+                  <li><p><strong>По умолчанию:</strong> none.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li><p><strong class="chapter">Позиционирование grid-элементов с помощью линий<code>grid-row-start, grid-row-end, grid-column-start, grid-column-end</code>:</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> auto|линия сетки|span количество|span 'имя линии'|число 'имя линии'.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Сокращенные свойства <code>grid-row, grid-column</code> имеют значения - начальная линия/конечная линия <code>grid-column:1/span 3</code>, объединяют свойства *-start и *-end в одно объявление.</p>
+              </li>
+              <li>
+                <p><strong class="chapter">Позиционирование области <code>grid-area</code> - указывает на одну из областей, именованных с помощью свойства grid-template-areas</strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> название области|от 1 до 4 идентификаторов линий.</p></li>
+                  <li><p><strong>По умолчанию:</strong> отдельные свойства.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Автоматическое указание размера неявным строкам и столбцам<code>grid-auto-rows, grid-auto-columns</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> список размеров дорожек.</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p></p>
+              </li>
+              <li>
+                <p><strong class="chapter">Направление потока элементов и плотность их расположения<code>grid-auto-flow</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> row или column|dense (опционально,заполняет сетку настолько плотно, насколько это возможно, позволяя элементам размещаться не по порядку, но заполняя своное пространство).</p></li>
+                  <li><p><strong>По умолчанию:</strong> row.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Пространство между дорожками ("желоба")<code>grid-row-gap, grid-column-gap</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> длина (не должна быть отрицательной).</p></li>
+                  <li><p><strong>По умолчанию:</strong> 0.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+                <p>Сокращенное свойство <code>grid-gap</code> для указания ширины пространства для строк и столбцов за один прием, значения <code>grid-row-gap, grid-column</code>.</p>
+              </li>
+              <li>
+                <p><strong class="chapter">Выравнивание отдельных элементов <code>justify-self, align-self</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> start|end|center|left|right|self-start|self-end|stretch|normal|auto (для обоих свойств).</p></li>
+                  <li><p><strong>По умолчанию:</strong> auto (в соответствии со значением justify-items или align-items соответственно).</p></li>
+                  <li><p><strong>Применение:</strong> к grid-элементам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Выравнивание всех элементов сетки <code>justify-items, align-items</code></strong>. Могут быть переопределены свойствами *self.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> start|end|center|left|right|self-start|self-end|stretch|normal (для обоих свойств).</p></li>
+                  <li><p><strong>По умолчанию:</strong> normal (stretch для незаменяемых элементов, start - для заменяемых).</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+              <li>
+                <p><strong class="chapter">Выравнивание дорожек в grid-контейнере <code>justify-content, align-content</code></strong>.</p>
+                <ul>
+                  <li><p><strong>Значения:</strong> start|end|center|left|right|stretch|space-around|space-between|space-evenly (для обоих свойств).</p></li>
+                  <li><p><strong>По умолчанию:</strong> start.</p></li>
+                  <li><p><strong>Применение:</strong> к grid-контейнерам.</p></li>
+                  <li><p><strong>Наследование:</strong> нет.</p></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+      </article>
+  <!-- Третий раздел "Адаптивный дизайн"-->
+      <article class="#">
+        <h2 class="title">Адаптивный дизайн</h2>
+        <section><h4>Методика адаптивного веб-дизайна</h4> Основные компоненты адаптивного веб-дизайна:
+          <ul>
+            <li>
+              <p><strong>гибкую сетку</strong> - возможность сжиматься и перетекать в доступное  пространство браузера;</p>
+            </li>
+            <li>
+              <p><strong>гибкие изображения</strong> - изображения и медиаобъекты имеют возможность масштабироваться;</p>
+            </li>
+            <li>
+              <p><strong>медиазапросы CSS</strong> - возможность досталять наборы правил только на те устройства, которые соответствуют определенным критериям, таким как ширина и ориентация;</p>
+            </li>
+            <li>
+              <p>как дополнение <strong>элемент области просмотра meta</strong>- позволяет ширине веб-страницы соответствовать ширине экрана.</p>
+            </li>
+          </ul>
+          <p>Организовывать адаптивность необходимо с построения наименьшего фрагмента контента, одноколоночной страницы.</p>
+        </section>
+        <section><h4>Оптимизация для широкого диапазона области просмотра</h4>
+          <ul>
+            <li><p><strong class="chapter">Общие понятия </strong>.</p></li>
+            <li><p>Иерархия контента</p> - выбор контент-стратегии позволяет определить необходимые точки прерывания, для маленьких областей просмотра рекомендуется использовать условную загрузку с использованием JS.</li>
+            <li><p>Макет</p> - дизайнеры начинают с одноколоночного макета, перекомпановывая элементы в более широкое число колонок, когда есть место. Оптимальной длиной строки является длина от 45 до 75 символов, включая пробелы. Шаблоны для обработки макетов адаптивными сайтами (Люк Вроблевски "Mobile First"):
+              <ul>
+                <li>
+                  <p><strong>Сильно текучий</strong> - одноколоночный макет для небольших экранов и текучие макеты, охватывающие средние и большие экраны. с ограничением максимальной ширины для предотвращения их слишком большого растяжения.</p>
+                </li>
+                <li>
+                  <p><strong>Выпадение столбца</strong> - переключение между макетами с одним, двумя или тремя столбцами в зависимости от доступного пространства.</p>
+                </li>
+                <li>
+                  <p><strong>Сдвиг макета</strong> - собственный макет для различных сред.</p>
+                </li>
+                <li>
+                  <p><strong>Небольшая настройка</strong> - одноколоночный макет с настройкой типа, интервалов, изображений для работы с устройствами с различными размерами.</p>
+                </li>
+                <li>
+                  <p><strong>Вне холста</strong> - компоненты расположены слева и справа от экрана и отображаются по запросу.</p>
+                </li>
+              </ul>
+            </li>
+            <li><p>Типографика, примеры параметров контента для типографики:</p>
+              <ul>
+                <li>
+                  <p><strong>Гарнитура шрифта</strong> - для маленьких экранов в приоритете разборчивость, для больших - стиль, для маленьких размеров устройств исключить шрифты с засечками.</p>
+                </li>
+                <li>
+                  <p><strong>Размер шрифта</strong> - возможность использования медиазапросов на основе em.</p>
+                </li>
+                <li>
+                  <p><strong>Высота строк</strong> - line-height должен быть около 1.5, на маленьких экранах от 1.2 до 1.5, для больших от 1.4 до 1.6.</p>
+                </li>
+                <li>
+                  <p><strong>Поля</strong> - для маленьких экранов левые и правые поля минимальны (2-4%) в главном столбце.</p>
+                </li>
+                <li>
+                  <p><strong>Вне холста</strong> - компоненты расположены слева и справа от экрана и отображаются по запросу.</p>
+                </li>
+              </ul>
+            </li>
+            <li><p>Навигация, некоторые шаблоны:</p>
+              <ul>
+                <li>
+                  <p><strong>Панель навигации в верхней части шаблона</strong> - одна или две строки в верхней части экрана (для навигации пальцами ссылка должна иметь размер не менее 44px).</p>
+                </li>
+                <li>
+                  <p><strong>приоритет +</strong> - наиболее важные навигационные ссылки в верхней части экрана рядом со ссылкой more.</p>
+                </li>
+                <li>
+                  <p><strong>Форма ввода select</strong> - использование пользовательского интерфейса выбора в виде прокручиваемого списка.</p>
+                </li>
+                <li>
+                  <p><strong>Связь с меню в колонтитуле</strong> - ссылка Menu вверхней части страницы и связана с расположенной в нижней части страницы полной системой навигации.</p>
+                </li>
+                <li>
+                  <p><strong>Аккордионная субнавигация</strong> - используется при наличии вложенных подменю.</p>
+                </li>
+                <li>
+                  <p><strong>Переключатели сдвигающие и наложения</strong> - навигационное меню скрыто, но раскрывается вниз при нажатии на значок меню, при этом контент сдвигается вниз (push-переключатели) или меню накладывается на контент (overlay-переключатели).</p>
+                </li>
+                <li>
+                  <p><strong>Вне холста</strong> - размещение навигационных ссылок на панели, находящейся за пределами экрана слева или справа от основного содержимого страницы и отображающейся при нажатии на значок меню.</p>
+                </li>
+              </ul>
+            </li>
+            <li><p>Изображения, ключевые моменты:</p>
+              <ul>
+                <li>
+                  <p><strong>Адаптивные методы разметки изображений</strong> - предоставление несколько версий ключевых изображений.</p>
+                </li>
+                <li>
+                  <p><strong>Использование наименьшей версии изображения</strong> - уменьшение загрузки данных.</p>
+                </li>
+                <li>
+                  <p><strong>Отображение важных деталей на любых устройствах</strong> - использование обрезки изображения для семантики на маленьких экранах.</p>
+                </li>
+                <li>
+                  <p><strong>исключить размещение текста в графике</strong> - при невозможности, для маленьких экранов необходима версия с увеличенным текстом.</p>
+                </li>
+              </ul>
+            </li>
+            <li><p>Специальный контент, к нему относится:</p>
+              <ul>
+                <li>
+                  <p><strong>Формы</strong> - для придания гибкости решением является использование Flexbox.</p>
+                </li>
+                <li>
+                  <p><strong>Таблицы</strong> - сложный объект для адаптации, имеет три основных подхода: прокрутка, укладка (узкий свиток с повторением заголовка) и сокрытие (пользователь выбирает столбцы, которые ему необходимы).</p>
+                </li>
+                <li>
+                  <p><strong>Интерактивные элементы</strong> - сложный объект для адаптации, возможно решение стоит преоставить браузеру и его приложениям.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>   
+  <!-- Четвертый раздел "Медиазапросы"-->
+      <article class="#">
+        <h2 class="title">Медиазапросы</h2>
+        <ul>
+          <li><p><strong class="chapter">Структура медиазапроса <code>"@media type and (feature:value){стили для браузеров}"</code></strong>, например <code>@media screen and (orientation:landscape){body{background:blue;}}</code>.</p></li>
+          <li><p>Наиболее часто используются следующие мультимедийные типы: <code>all, print, screen, speech (речь)</code></p>
+          </li>
+          <li><p>С помощью медиазапросов можно проверять следующие медиасвойства:width, height, orientation (portrait или landscape), aspect-ratio (отношение ширины области просмотра к высоте), color (битовая глубина экрана), color-index (количество цветов в таблице соответствия цветов), monochrome (количество битов на пиксел в мннохромном устройстве), resolution (плотность пикселов на устройстве), scan (применяет ли тип медиа tv прогрессивную или чересстрочную развертку), grid (использует ли устройство строчный дисплей).</p>
+          </li>
+          <li><p>В отдельных случаях для разных устройств возможно посместить стили в отдельные файлы, для загрузки необходимого файла таблицы стилей используется атрибут media в элементе link, например <code>link rel=""stylesheet" href="/" media="screen and (min-width:1024px)".</code> Кроме этого, выполнять медиазапросы можно с помощью правил @import без использования ключевого слова media - <code>@import url("/") screen and (min-width:124px);</code>.</p>
+          </li>
+        </ul>
+
+
+
+      </article>
+  <!-- Пятый раздел "Архитектура"-->
+  <!-- Шестой раздел "Процессоры"-->
+    </article>
+</main>
+<footer>
+</footer>
+  </body>
+</html>
