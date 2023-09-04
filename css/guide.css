@@ -1,0 +1,75 @@
+.guide {
+  border: 1px solid #000;
+  background-image: url("/img/overly.jpg");
+  border: 1px solid #000;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid #000;
+
+}
+.guide__container {
+  display: flex;
+  padding-top: 128px;
+  padding-left: 80px;
+  color:#FFFFFF;
+  max-width: 804px;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap:36px
+}
+.guide__title {
+  font-family: Sen;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.15; /* 114.286% */
+  letter-spacing: -2px;
+}
+.guide__autor {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; 
+}
+.guide__autor-by {
+}
+.guide__autor-name {
+  
+}
+.guide__autor-name--color-yellow {
+  color:  #FFD050;
+}
+.guide__autor-date-creat {
+  padding-left: 10px;
+  border-left: 0.5px solid #fff;
+  color:  #FFFFFF;
+}
+/*.guide__description {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}*/
+.button {
+  background: #FFD050;
+  width:156px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0px 30px 16px 0px;
+  align-items: flex-start;
+  gap: 12px;
+}
+.button__text {
+  color: #232536;
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+}

@@ -1,109 +1,149 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <title>Bovaniko_Blog</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <!--For mobile devices-->
+  <meta charset="UTF-8">
+  <title>Bovaniko_Blog</title>
+    <!--For mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--For mobile devices & no-resize-->
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-
   <!--Document Favicon in browser tabs-->
   <link rel="shortcut icon" href="icons/icon1.png" type="image/x-icon">
   <!--<link rel="apple-touch-icon" sizes="72x72" href="#"> Продвинутый способ добавления иконки для экранов, поддерживающих высокую плотность изображений-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <!--SEO-->
+    <!--SEO-->
   <meta name="description" content="Learn web">
-  <meta name="keywords" content="html, CSS? JS, webdev, BolshakovVasilij">
+  <meta name="keywords" content="html, CSS, JS, webdev, BolshakovVasilij">
   <meta name="author" content="BolshakovVasilij">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-    rel="stylesheet" type="text/css" />
-  <link href="css\normilize.css" rel="stylesheet">
-  <link href="css\style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-900.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/sen-v7-latin-700.woff2" as="font" crossorigin>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="home-page">
   <!--Page Header -->
-  <header class="masthead">
-    <div class="masthead__logo">
-      <a href="index.html">
-        <img src="img/LogoBV.png" alt="logo" width="130px" height="80px">
-      </a>
+  <header class="header fon">
+<!-- Logo-->
+    <div class="container container--w800">
+      <div class="logo>
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="icons/logo.svg" alt="logo"  viewbox="0 0 140 80">
+          </a>
+      </div>
+<!-- Navigation-->
+      <div class="container__nav">
+        <nav class="nav header__nav">
+          <button class="nav__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Главная</a></li>
+            <li class="nav__item"><a href="#">Путь</a>
+              <ul class="nav__nested">
+                <li class="nested__item"><a href="frontend/frontend.html"></a></li>
+                <li><a href="backend/backend.html"></a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
+            <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+            <button class="button-enter" type="button"><a href="post.html">Вход/Регистрация</a></button>
+            <button class="btn-enter" type="button"><a class="btn-enter__link" href="#" "><img class="img__enter" src="img/nav-enter.svg" alt="Вход"></a></button>
+      </div>
     </div>
-    <!-- Navigation-->
-    <nav class="nav__list">
-      <ul class="top-nav">
-        <li class="top-nav__item"><a href="index.html">Главная</a></li></a></li>
-        <li class="top-nav__item"><a href="frontend/frontend.html">Путь</a></li>
-        <li class="top-nav__item"><a href="portfolio/portfolio.html">Портфолио</a>
-        </li>
-        <li class="top-nav__item"><a href="contact/contact.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <form action="POST" class="form__list"><input type="search" name="form_search" placeholder="Поиск">
-      <ul class="top-form">
-        <li class="top-form__item"><label for="search"></label> </li>
-        <li class="top-form__item><button type=" button"><a class="navbar-item-form__link"
-            href="post.html">Войти</a></b>
-        </li>
-        <li class="top-form__item><button type=" button"><a class="navbar-item-form__link" href="post.html">Регистрация</a></button></li>
-      </ul>
-    </form>
   </header>
   <!--Основной раздел-->
+  <section class="guide">
+    <div class="guide__container">
+      <h1 class="guide__title">Пройденные курсы, полезные обзоры и рекомендации</h1>
+        <div class="guide__description">
+            <div class="guide__autor">
+              <p class="guide__autor-by">От <span class="guide__autor-name guide__autor-name--color-yellow">Большакова Василия</span> 
+              <span class="guide__autor-date-creat">20 августа 2023 г.</span><br>
+              <span>Блог о разных сторонах мира информационных технологий</span></p>
+          </div>
+        </div>
+      <button class="button"><a class="button__text" href="#">Читать далее ></a></button>
+    </div>
+  </section>
+  
+  
   <main>
-    <div class="container position-relative px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-8 col-lg-10 col-xl-7">
-          <div class="site-heading">
-            <h1> Программная инженерия для инженеров</h1>
-            <blockquote class="blockquote">
-              <p class="text-nowrap">"Человек, утративший способность интересоваться новым, перестает быть интересным
-                сам."</p>
-            </blockquote>
-            <footer class="blockquote-footer"> Александра Лисина</footer>
+    <section>Нормативное регулирование </section>
+    <article><section> Статьи</section></article>
+    <article><section> Новое </section></article>
+    <aside></aside>
+  </main>
+  <!-- блок для ссылок на социальные сети -->
+  <footer class="footer">
+      <div class="container container__content">
+        <div class="footer__top">
+          <div class="logo">
+              <a class="logo__link" href="index.html">
+                <img class="logo__img" src="icons/logo.svg" alt="logo"  width="140px" height="28.354px" viewbox="0 0 140 28.354">
+              </a>
+          </div>
+    <!-- Navigation-footer-->
+          <nav class="nav footer__nav">
+            <div class="container__nav">
+              <button class="nav__btn nav__btn-footer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="nav__list nav-footer">
+                <li class="nav__item"><a href="index.html">Главная</a></li>
+                <li class="nav__item"><a href="#">Путь</a>
+                  <ul class="nav__nested">
+                    <li class="nested__item"><a href="frontend/frontend.html"></a></li>
+                    <li><a href="backend/backend.html"></a></li>
+                  </ul>
+                </li>
+                <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
+                <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container-internal">
+            <h2 class="description-subscrube">
+              Подпишись на рассылку новостей и событий
+            </h2>
+            <div class="container-internal__email">
+              <div class="email">
+                <input class="email__input" type="email" name="email" value="Введите email">
+              </div>
+              <button class="button" type="button"><a href="post.html">Подписаться</a></button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="address">
+            <ul class="address-list">
+              <li class="address-item">Москва</li>
+              <li class="nav__item address-item"><a href="mailto:bovanikoz@gmail.com" target="_blank">bovanikoz@gmail.com</a></li>
+            </ul>
+          </p>
+          </div>
+          <div class="social">
+            <ul class="nav__list social__list">
+              <li class="nav__item" ><a href="#"><img class="social__img"  src="img/fb.svg" alt="facebook"></a></li>
+              <li  class="nav__item"><a href="#"><img class="social__img" src="img/ing.svg" alt="instagram"></a></li>
+              <li  class="nav__item"><a href="#"><img class="social__img" src="img/tw.svg" alt="twitter"></a></li>
+              <li  class="nav__item"><a href="#"><img class="social__img" src="img/lin.svg" alt="linkedin"></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <main>
-    <div class="container-fluid">
-      <h1> 3 различных блока </h1>
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4" style="background-color: #ff9999">Нормативное регулирование
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" style="background-color: #99CCFF">Разработка</div>
-        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" style="background-color: #00CC99">Внедрение</div>
-      </div>
-    </div>
-    <div class="container">
-      <form role="form">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Введите email">
-          <p class="help-block">Подсказка</p>
-        </div>
-      </form>
-    </div>
-
-  </main>
-  <!-- блок для ссылок на социальные сети -->
-  <footer>
-    <div>
-      <p><strong>Наша страница в социальных медиа</strong></p>
-      <p><img src="img/icons/telegram-app.svg" alt="telegram" width="48" height="48"> <img
-          src="img/icons/vk-circled.svg" alt="vkontakte" width="48" height="48"> <img src="img/icons/whatsapp-96.svg"
-          alt="whatsapp" width="48" height="48"></p>
-    </div>
-
   </footer>
 </body>
-
 </html>
