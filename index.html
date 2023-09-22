@@ -61,25 +61,69 @@
     </div>
   </header>
   <!--Основной раздел-->
-  <section class="guide">
-    <div class="guide__container">
-      <h1 class="guide__title">Пройденные курсы, полезные обзоры и рекомендации</h1>
-        <div class="guide__description">
-            <div class="guide__autor">
-              <p class="guide__autor-by">От <span class="guide__autor-name guide__autor-name--color-yellow">Большакова Василия</span> 
-              <span class="guide__autor-date-creat">20 августа 2023 г.</span><br>
-              <span>Блог о разных сторонах мира информационных технологий</span></p>
+  <main>
+    <section class="guide">
+      <div class="guide__container">
+        <div class="guide__wrapper">
+          <h1 class="guide__title">Пройденные курсы, полезные обзоры и рекомендации</h1>
+            <div class="guide__description">
+                <div class="guide__autor">
+                  <p class="guide__autor-by">От <a class="guide__autor-name guide__autor-name--color-yellow">Большакова Василия</a> 
+                  <span class="guide__autor-date-creat">20 августа 2023 г.</span><br>
+                  <span>Блог о разных сторонах мира информационных технологий</span></p>
+              </div>
+            </div>
+          <button class="button"><a class="button__text" href="#">Читать далее ></a></button>
+        </div>
+      </div>
+    </section>
+    <section class="post">
+      <div class="post__container">
+        <div class="featured">
+          <h2 class="featured__title post__title">
+            Актуальный пост
+          </h2>
+          <div class="featured__container">
+            <div class="featured__img">
+              <image class="post__img" src="/img/img-post.jpg" alt="post"></image>
+              <p class="featured__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+            </div>
+            <div class="featured__info"><h3 class="info__title">Digital-рисунок сделанный с помощью планшета Wacoom.</h3><p class="info__descr">Первое знакомство с настольным планшетом One by Wacoom. Сделано в Photoshop.</p>
+            </div>
+            <button class="button featured__btn"><a class="button__text featured-btn__text" href="#">Читать далее ></a></button>
           </div>
         </div>
-      <button class="button"><a class="button__text" href="#">Читать далее ></a></button>
-    </div>
-  </section>
-  
-  
-  <main>
-    <section>Нормативное регулирование </section>
+        <div class="all-post">
+          <div class="all-post__container">
+            <h2 class="all-post__title post__title">Все посты</h2>
+            <a class="all-post__view" href="#" >Смотреть все</a>
+          </div>
+          <ul class="all-post__list">
+            <li class="all-post__item">
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="post-item__title"> 'Веб-дизайн для начинающих' Дженнифер Ниедрст Роббинс. Издательство O'ReillY. Краткие комментарии.</p>
+            </li>
+            <li class="all-post__item">
+              <p class="all-post__descr autor__descr">От<a class=" autor__descr autor__descr--link">Большаков Василий</a><span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="post-item__title">Frontend-Канал Вадима Прокопчука. Что нового я узнал.</p>
+            </li>
+            <li class="all-post__item">
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="post-item__title">Здесь надо подумать, что запостить.</p>
+            </li>
+            <li class="all-post__item">
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="post-item__title">Здесь надо подумать, что запостить.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!--<section>Нормативное регулирование </section>
     <article><section> Статьи</section></article>
-    <article><section> Новое </section></article>
+    <article><section> Новое </section></article>-->
     <aside></aside>
   </main>
   <!-- блок для ссылок на социальные сети -->
