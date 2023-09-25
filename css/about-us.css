@@ -1,0 +1,43 @@
+  .about-us {
+    width:100%;
+  }
+  .about-us__container {
+    max-width:1920px;
+    min-height: 500px;
+    display:flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+  .shape__container {
+    padding-left: 219px;
+    display:flex;
+    justify-content: flex-start;
+  }
+  .shape {
+    height: 23px;
+  }
+  .shape--yellow {
+    max-width:843px;
+    
+  }
+  .shape--violet {
+  }
+  .content__wrapper {
+  }
+  .about-us__content {
+  }
+  .about-us__title {
+  }
+  .about-us__descr {
+  }
+  .about-us__text {
+  }
+  .about-us__btn {
+  }
+  .mission__content {
+  }
+  .mission__descr {
+  }
+  .mission__text {
+  }

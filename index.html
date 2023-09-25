@@ -85,7 +85,10 @@
           </h2>
           <div class="featured__container">
             <div class="featured__img">
-              <image class="post__img" src="/img/img-post.jpg" alt="post"></image>
+              <picture class="post__img">
+                <source media="(min-width: 520px)" srcset="img/img-post.jpg "> 
+                <image class="post__img" src="img/img-post-390.jpg" alt="post"></image>
+              </picture>
               <p class="featured__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
             </div>
             <div class="featured__info"><h3 class="info__title">Digital-рисунок сделанный с помощью планшета Wacoom.</h3><p class="info__descr">Первое знакомство с настольным планшетом One by Wacoom. Сделано в Photoshop.</p>
@@ -101,10 +104,10 @@
           <ul class="all-post__list">
             <li class="all-post__item">
               <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
-              <p class="post-item__title"> 'Веб-дизайн для начинающих' Дженнифер Ниедрст Роббинс. Издательство O'ReillY. Краткие комментарии.</p>
+              <p class="post-item__title"> 'Веб-дизайн для начинающих' Дженнифер Нидерст Роббинс. Издательство O'Reilly. Краткие комментарии.</p>
             </li>
             <li class="all-post__item">
-              <p class="all-post__descr autor__descr">От<a class=" autor__descr autor__descr--link">Большаков Василий</a><span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a><span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
               <p class="post-item__title">Frontend-Канал Вадима Прокопчука. Что нового я узнал.</p>
             </li>
             <li class="all-post__item">
@@ -119,9 +122,34 @@
         </div>
       </div>
     </section>
+    <section class="about-us"> 
+      <div class="about-us__container">
+        <div class="shape__container">
+            <img class="shape shape--yellow" src="img/shape.svg" alt="shape">
+            <img class="shape shape--violet" src="img/shape-violet.svg" alt="shape">
+          <div class="shape shape--violet"></div>
+        </div>
+        <div class="content__wrapper">
+          <div class="about-us__content">
+            <h3 class="about-us__title"> О сайте
+            </h3>
+            <div class="about-us__descr">На сайте публикуется контент из области информационных технологий и их прикладного применения</div>
+            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+            <button class="about-us__btn">Смотрите далее ></button>
+          </div>
+          <div class="mission__content">
+            <h3 class="about-us__title">Миссия сайта
+            </h3>
+            <div class="mission__descr">Показать, объяснить, сделать выводы.</div>
+            <p class="mission__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
-    <!--<section>Нормативное регулирование </section>
+
     <article><section> Статьи</section></article>
     <article><section> Новое </section></article>-->
     <aside></aside>
