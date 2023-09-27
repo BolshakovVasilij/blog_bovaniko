@@ -1,0 +1,44 @@
+  .map {
+    width: 100%;
+  }
+  .map__container {
+    max-width: 1280px;
+    min-height: 324px;
+    display: flex;
+    flex-direction: column;
+    padding: 128px 80px 0 80px;
+    gap:48px;
+    justify-content: center;
+  }
+  .map-title {
+    color:  #232536;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+    letter-spacing: -2px;
+    text-align: center;
+  }
+  .container-map {
+    max-width: 1280px;
+    min-height: 228px;
+  }
+  .swiper-slider{
+    display: flex;
+    gap:32px;
+   }
+   .map__item {
+    min-width: 296px;
+    min-height: 228px;
+    border: 1px solid var(--Medium-grey, #6D6E76);
+    border-color: rgba(109,110,118, 0.3);
+   }F
+   .map__link {
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.42; /* 142.857% */
+    letter-spacing: -1px;
+   }

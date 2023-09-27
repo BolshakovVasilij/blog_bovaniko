@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <title>Bovaniko_Blog</title>
-    <!--For mobile devices-->
+  <!--For mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--For mobile devices & no-resize-->
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
   <!--Document Favicon in browser tabs-->
   <link rel="shortcut icon" href="icons/icon1.png" type="image/x-icon">
   <!--<link rel="apple-touch-icon" sizes="72x72" href="#"> Продвинутый способ добавления иконки для экранов, поддерживающих высокую плотность изображений-->
-    <!--SEO-->
+  <!--SEO-->
   <meta name="description" content="Learn web">
   <meta name="keywords" content="html, CSS, JS, webdev, BolshakovVasilij">
   <meta name="author" content="BolshakovVasilij">
@@ -20,20 +21,23 @@
   <link rel="preload" href="fonts/inter-v12-cyrillic_latin-700.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/inter-v12-cyrillic_latin-900.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/sen-v7-latin-700.woff2" as="font" crossorigin>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link href="css/index.css" rel="stylesheet" type="text/css">
+
+
 </head>
 
 <body class="home-page">
   <!--Page Header -->
   <header class="header fon">
-<!-- Logo-->
+    <!-- Logo-->
     <div class="container container--w800">
       <div class="logo>
-          <a class="logo__link" href="index.html">
-            <img class="logo__img" src="icons/logo.svg" alt="logo"  viewbox="0 0 140 80">
-          </a>
+          <a class=" logo__link" href="index.html">
+        <img class="logo__img" src="icons/logo.svg" alt="logo" viewbox="0 0 140 80">
+        </a>
       </div>
-<!-- Navigation-->
+      <!-- Navigation-->
       <div class="container__nav">
         <nav class="nav header__nav">
           <button class="nav__btn">
@@ -55,8 +59,9 @@
             <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
           </ul>
         </nav>
-            <button class="button-enter" type="button"><a href="post.html">Вход/Регистрация</a></button>
-            <button class="btn-enter" type="button"><a class="btn-enter__link" href="#" "><img class="img__enter" src="img/nav-enter.svg" alt="Вход"></a></button>
+        <button class="button-enter" type="button"><a href="post.html">Вход/Регистрация</a></button>
+        <button class="btn-enter" type="button"><a class="btn-enter__link" href="#" "><img class=" img__enter"
+            src="img/nav-enter.svg" alt="Вход"></a></button>
       </div>
     </div>
   </header>
@@ -66,13 +71,15 @@
       <div class="guide__container">
         <div class="guide__wrapper">
           <h1 class="guide__title">Пройденные курсы, полезные обзоры и рекомендации</h1>
-            <div class="guide__description">
-                <div class="guide__autor">
-                  <p class="guide__autor-by">От <a class="guide__autor-name guide__autor-name--color-yellow">Большакова Василия</a> 
-                  <span class="guide__autor-date-creat">20 августа 2023 г.</span><br>
-                  <span>Блог о разных сторонах мира информационных технологий</span></p>
-              </div>
+          <div class="guide__description">
+            <div class="guide__autor">
+              <p class="guide__autor-by">От <a class="guide__autor-name guide__autor-name--color-yellow">Большакова
+                  Василия</a>
+                <span class="guide__autor-date-creat">20 августа 2023 г.</span><br>
+                <span>Блог о разных сторонах мира информационных технологий</span>
+              </p>
             </div>
+          </div>
           <button class="button"><a class="button__text" href="#">Читать далее ></a></button>
         </div>
       </div>
@@ -86,136 +93,247 @@
           <div class="featured__container">
             <div class="featured__img">
               <picture class="post__img">
-                <source media="(min-width: 520px)" srcset="img/img-post.jpg "> 
+                <source media="(min-width: 520px)" srcset="img/img-post.jpg ">
                 <image class="post__img" src="img/img-post-390.jpg" alt="post"></image>
               </picture>
-              <p class="featured__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="featured__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
+                  Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
             </div>
-            <div class="featured__info"><h3 class="info__title">Digital-рисунок сделанный с помощью планшета Wacoom.</h3><p class="info__descr">Первое знакомство с настольным планшетом One by Wacoom. Сделано в Photoshop.</p>
+            <div class="featured__info">
+              <h3 class="info__title">Digital-рисунок сделанный с помощью планшета Wacoom.</h3>
+              <p class="info__descr">Первое знакомство с настольным планшетом One by Wacoom. Сделано в Photoshop.</p>
             </div>
-            <button class="button featured__btn"><a class="button__text featured-btn__text" href="#">Читать далее ></a></button>
+            <button class="button featured__btn"><a class="button__text featured-btn__text" href="#">Читать далее
+                ></a></button>
           </div>
         </div>
         <div class="all-post">
           <div class="all-post__container">
             <h2 class="all-post__title post__title">Все посты</h2>
-            <a class="all-post__view" href="#" >Смотреть все</a>
+            <a class="all-post__view" href="#">Смотреть все</a>
           </div>
           <ul class="all-post__list">
             <li class="all-post__item">
-              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
-              <p class="post-item__title"> 'Веб-дизайн для начинающих' Дженнифер Нидерст Роббинс. Издательство O'Reilly. Краткие комментарии.</p>
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
+                  Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="post-item__title"> 'Веб-дизайн для начинающих' Дженнифер Нидерст Роббинс. Издательство O'Reilly.
+                Краткие комментарии.</p>
             </li>
             <li class="all-post__item">
-              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a><span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
+                  Василий</a><span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
               <p class="post-item__title">Frontend-Канал Вадима Прокопчука. Что нового я узнал.</p>
             </li>
             <li class="all-post__item">
-              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
+                  Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
               <p class="post-item__title">Здесь надо подумать, что запостить.</p>
             </li>
             <li class="all-post__item">
-              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
+              <p class="all-post__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
+                  Василий</a> <span class="autor__descr autor__descr--left-border">23.09.2023</span></p>
               <p class="post-item__title">Здесь надо подумать, что запостить.</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="about-us"> 
+    <section class="about-us">
       <div class="about-us__container">
         <div class="shape__container">
-            <img class="shape shape--yellow" src="img/shape.svg" alt="shape">
-            <img class="shape shape--violet" src="img/shape-violet.svg" alt="shape">
-          <div class="shape shape--violet"></div>
+          <div class="shape-yellow"><img class="shape shape--yellow" src="img/shape-yellow.jpg" alt="shape"></div>
+          <div class="shape-violet"><img class="shape shape--violet" src="img/shape-violet.jpg" alt="shape"></div>
         </div>
         <div class="content__wrapper">
           <div class="about-us__content">
             <h3 class="about-us__title"> О сайте
             </h3>
-            <div class="about-us__descr">На сайте публикуется контент из области информационных технологий и их прикладного применения</div>
-            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
-            <button class="about-us__btn">Смотрите далее ></button>
+            <div class="about-us__descr">На сайте публикуется контент из области информационных технологий и их
+              прикладного применения</div>
+            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
+              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+            <button class="button about-us__btn">Смотрите далее ></button>
           </div>
           <div class="mission__content">
             <h3 class="about-us__title">Миссия сайта
             </h3>
             <div class="mission__descr">Показать, объяснить, сделать выводы.</div>
-            <p class="mission__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+            <p class="mission__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
+              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
           </div>
         </div>
       </div>
 
     </section>
+    <section class="fronted-map map">
+      <div class="map__container">
+        <h2 class="map-title">Выберите категорию технологии Frontend (слайдер сделан по видео Прокопчука)</h2>
+        <div class="container-map map__content">
+          <div class="map__slider">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slider">
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/internet.svg" width="48" height="48">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Интернет</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Интернет</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">HTML</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">CSS</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">JavaScript</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">JВеб-безопасность</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Инструменты</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Фреймворки</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+                <div class="map__item">
+                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  </object>
+                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">GraphQL</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                    necessitatibus.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="tab">Переключатель</div>
+      </div>
+    </section>
 
 
 
-    <article><section> Статьи</section></article>
-    <article><section> Новое </section></article>-->
+    <article>
+      <section> Статьи</section>
+    </article>
+    <article>
+      <section> Новое </section>
+    </article>-->
     <aside></aside>
   </main>
   <!-- блок для ссылок на социальные сети -->
   <footer class="footer">
-      <div class="container container__content">
-        <div class="footer__top">
-          <div class="logo">
-              <a class="logo__link" href="index.html">
-                <img class="logo__img" src="icons/logo.svg" alt="logo"  width="140px" height="28.354px" viewbox="0 0 140 28.354">
-              </a>
-          </div>
-    <!-- Navigation-footer-->
-          <nav class="nav footer__nav">
-            <div class="container__nav">
-              <button class="nav__btn nav__btn-footer">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <ul class="nav__list nav-footer">
-                <li class="nav__item"><a href="index.html">Главная</a></li>
-                <li class="nav__item"><a href="#">Путь</a>
-                  <ul class="nav__nested">
-                    <li class="nested__item"><a href="frontend/frontend.html"></a></li>
-                    <li><a href="backend/backend.html"></a></li>
-                  </ul>
-                </li>
-                <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
-                <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
-              </ul>
-            </div>
-          </nav>
+    <div class="container container__content">
+      <div class="footer__top">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="icons/logo.svg" alt="logo" width="140px" height="28.354px"
+              viewbox="0 0 140 28.354">
+          </a>
         </div>
-        <div class="container-internal">
-            <h2 class="description-subscrube">
-              Подпишись на рассылку новостей и событий
-            </h2>
-            <div class="container-internal__email">
-              <div class="email">
-                <input class="email__input" type="email" name="email" value="Введите email">
-              </div>
-              <button class="button" type="button"><a href="post.html">Подписаться</a></button>
-            </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="address">
-            <ul class="address-list">
-              <li class="address-item">Москва</li>
-              <li class="nav__item address-item"><a href="mailto:bovanikoz@gmail.com" target="_blank">bovanikoz@gmail.com</a></li>
-            </ul>
-          </p>
-          </div>
-          <div class="social">
-            <ul class="nav__list social__list">
-              <li class="nav__item" ><a href="#"><img class="social__img"  src="img/fb.svg" alt="facebook"></a></li>
-              <li  class="nav__item"><a href="#"><img class="social__img" src="img/ing.svg" alt="instagram"></a></li>
-              <li  class="nav__item"><a href="#"><img class="social__img" src="img/tw.svg" alt="twitter"></a></li>
-              <li  class="nav__item"><a href="#"><img class="social__img" src="img/lin.svg" alt="linkedin"></a></li>
+        <!-- Navigation-footer-->
+        <nav class="nav footer__nav">
+          <div class="container__nav">
+            <button class="nav__btn nav__btn-footer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav__list nav-footer">
+              <li class="nav__item"><a href="index.html">Главная</a></li>
+              <li class="nav__item"><a href="#">Путь</a>
+                <ul class="nav__nested">
+                  <li class="nested__item"><a href="frontend/frontend.html"></a></li>
+                  <li><a href="backend/backend.html"></a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
+              <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
             </ul>
           </div>
+        </nav>
+      </div>
+      <div class="container-internal">
+        <h2 class="description-subscrube">
+          Подпишись на рассылку новостей и событий
+        </h2>
+        <div class="container-internal__email">
+          <div class="email">
+            <input class="email__input" type="email" name="email" value="Введите email">
+          </div>
+          <button class="button" type="button"><a href="post.html">Подписаться</a></button>
         </div>
       </div>
+      <div class="footer__bottom">
+        <div class="address">
+          <ul class="address-list">
+            <li class="address-item">Москва</li>
+            <li class="nav__item address-item"><a href="mailto:bovanikoz@gmail.com"
+                target="_blank">bovanikoz@gmail.com</a></li>
+          </ul>
+          </p>
+        </div>
+        <div class="social">
+          <ul class="nav__list social__list">
+            <li class="nav__item"><a href="#"><img class="social__img" src="img/fb.svg" alt="facebook"></a></li>
+            <li class="nav__item"><a href="#"><img class="social__img" src="img/ing.svg" alt="instagram"></a></li>
+            <li class="nav__item"><a href="#"><img class="social__img" src="img/tw.svg" alt="twitter"></a></li>
+            <li class="nav__item"><a href="#"><img class="social__img" src="img/lin.svg" alt="linkedin"></a></li>
+          </ul>
+        </div>
+        <div class="hade">
+          <p class="hade__text">Сделано ручками на flexbox</p>
+          <div class="hade-wrapper"><img class="hade__img" src="icons/made_Hade2.png" alt="made hade"></div>
+        </div>
+      </div>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
+
 </html>

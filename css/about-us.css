@@ -1,43 +1,114 @@
   .about-us {
     width:100%;
+    padding:0px 80px;
+    background-color: #fff;
   }
   .about-us__container {
     max-width:1920px;
     min-height: 500px;
     display:flex;
     flex-direction: column;
-
     margin: 0 auto;
   }
   .shape__container {
-    padding-left: 219px;
     display:flex;
-    justify-content: flex-start;
-  }
-  .shape {
+    max-width: 1280px;
+    padding-left: 219px;
     height: 23px;
   }
-  .shape--yellow {
-    max-width:843px;
+  .shape-yellow {
+    max-width:779px;
     
   }
+  .shape-violet {
+    max-width:282px;
+    
+  }
+  .shape--yellow {
+    height: 100%;
+  }
   .shape--violet {
+    height: 100%;
+
   }
   .content__wrapper {
+    display: flex;
+    max-width: 1280px;
+    min-height: 500px;
+    background-color: #F4F0F8;
+    padding: 96px 108px 96px 80px;
+    justify-content: space-between;
+    color: #232536;
+    gap:82px;
   }
   .about-us__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
   .about-us__title {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #232536;
   }
   .about-us__descr {
+    padding-top: 24px;
+    max-width: 494px;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+    letter-spacing: -2px;
+
   }
+
   .about-us__text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 515px;
+    min-height: 56px;
+    color: #6D6E76;
   }
   .about-us__btn {
+    width: 150px;
+    background-color: #F4F0F8;
+    color:  #592EA9;
+    font-family: Sen;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.77; /* 177.778% */
+    padding: 0;
+    padding-top: 16px;
+
   }
   .mission__content {
+
   }
   .mission__descr {
+    max-width: 481px;
+    padding-top: 24px;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4; /* 142.857% */
+    letter-spacing: -1px;
   }
   .mission__text {
+    max-width: 516px;
+    padding-top: 16px;
+    min-height: 108.734px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    color: #6D6E76;
   }

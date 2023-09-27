@@ -98,3 +98,22 @@
 .nav__btn-footer {
 
 }
+.hade {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content:center;
+  align-items: center;
+  width:140px;
+}
+.hade__text {
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.hade-wrapper {
+
+}
+.hade__img {
+
+}
