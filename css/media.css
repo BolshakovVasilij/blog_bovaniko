@@ -36,14 +36,41 @@
 .shape__container {
   padding-left: 120px;
 }
+.shape-yellow {
+  max-width:843px;
+}
 }
 @media only screen and (max-width:1140px){
-  .nav__list {
-    display: none;
+
+  .header__nav-list {
+    width:800px;
+    background-color: #FFD050;
+    color:#000;
+    gap:20px;
+    padding: 15px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease;
   }
-  .button-enter {
-    display:none;
+  .button-enter__hidden {
+    width:220px;
+    height: 49.19px;
+    padding: 15px;
+    position: absolute;
+    top:0;
+    left: 800px;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease;
   }
+  .header__nav-list.nav--open {
+    transform: translateY(80px);
+  }
+  .button-enter__hidden.nav--open {
+    transform: translateY(80px);
+  }
+
   .btn-enter {
     display:flex;
     border: 1px solid #494949;
@@ -127,6 +154,9 @@
   }
   .post__img {
     width: 842px;
+  }
+  .shape-yellow {
+    max-width:543px;
   }
 }
 @media only screen and (max-width:800px){
@@ -266,6 +296,9 @@ font-size: 28px;
   .about-us__text {
     font-size: 14px;
   }
+  .shape-yellow {
+    max-width:300px;
+  }
   .mission__descr {
     font-size: 16px;
     letter-spacing: 0;
@@ -299,6 +332,9 @@ font-size: 28px;
 }
   .shape__container {
     height: 10px;
+  }
+  .shape-yellow {
+    max-width:300px;
   }
   .footer {
     min-height: 550px;

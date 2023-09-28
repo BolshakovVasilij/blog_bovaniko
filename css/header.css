@@ -92,6 +92,9 @@
 .nav__item {
   padding:0;
 }
+.nav__nested {
+  display: none;
+}
 .button-enter {
   padding-left: 24px;
   padding-bottom: 24px;
