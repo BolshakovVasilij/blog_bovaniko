@@ -70,12 +70,16 @@
     overflow:hidden;
    }
    .map__slider {
-    width:600px;
+    width:500px;
    }
    .swiper-wrapper {
     display: flex;
-    gap:32px;
+    gap:20px;
    }
+ 
+  .swiper-slide-visible {
+    opacity: 1;
+  }
    .map__content .swiper-pagination {
     padding-top: 30px;
     position: relative;
@@ -83,10 +87,24 @@
     align-items: center;
     width:1760px;
    }
-    .swiper-pagination-bullet {
-    background-color: #BEA495;
+  .swiper-pagination-bullet{
+    background-color: #645b56;
     width: 53px;
-    height: 4px;
+    height: 10px;
     border-radius: 0%;
-
+    opacity:1;
 }
+    .swiper-pagination-bullet-active {
+      background-color: #da580c;
+    }
+    .swiper-slide {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ 
+    }
+    .swiper-container {
+      width: 100%;
+      overflow: visible;
+    }
