@@ -38,19 +38,48 @@ const swiperOne = new Swiper('.map__slider', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: -80,
-  loopPreventsSlide: false,
-
- 
-
-  //setWrapperSize: true,
-  //loop: true,
+  centeredSlides: true,
+  //loopedSlides: 7,
+  //watchSlidesVisibility: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-
-
-
+  breakpoints: {
+    1920: {
+      slidesPerView: 'auto',
+      spaceBetween: -80,
+    },
+    1140: {
+      spaceBetween: 0,
+    },
+    1000: {
+      spaceBetween: 20,
+    },
+    800: {
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+   600: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+    },
+    //768: {
+    //  slidesPerView: 1,
+    //  spaceBetween: 0,
+    //},
+  },
+    //768: {
+    //  slidesPerView: 4,
+    //  spaceBetween: 40,
+    //},
+    //1024: {
+    //  slidesPerView: 5,
+    //  spaceBetween: 50,
+    //},
   //// Responsive breakpoints
   //breakpoints: {
   //  // when window width is >= 320px

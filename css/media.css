@@ -39,6 +39,9 @@
 .shape-yellow {
   max-width:843px;
 }
+.swiper-slide {
+  max-width: 450px;
+}
 }
 @media only screen and (max-width:1140px){
 
@@ -134,8 +137,9 @@
     line-height: 1.33;
     letter-spacing: -2px;
   }
-
-
+  .swiper-slide {
+    max-width: 400px;
+  }
 
 }
   @media only screen and (max-width:1000px){
@@ -157,6 +161,10 @@
   }
   .shape-yellow {
     max-width:543px;
+  }
+  .swiper-pagination-bullet{
+    width: 40px;
+    height: 10px;
   }
 }
 @media only screen and (max-width:800px){
@@ -205,6 +213,10 @@
     flex-direction: column;
     gap:36px
   }
+  .swiper-pagination-bullet{
+    width: 30px;
+    height: 10px;
+  }
 
 }
 @media only screen and (max-width:768px){
@@ -223,6 +235,12 @@
   .address {
     width:auto;
   }
+  .map__item {
+    min-width: 200px;
+    min-height: 228px;
+    padding: 32px;
+  }
+  
 }
 @media only screen and (max-width:600px){
   .guide__title {
@@ -254,6 +272,9 @@
 .about-us{
   padding: 64px 38px 64px 40px;
 }
+/*.swiper-slide {
+  width:100%;
+}*/
 }
 @media only screen and (max-width:520px){
 
