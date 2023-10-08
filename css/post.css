@@ -1,7 +1,8 @@
 .post {
   width:100%;
-  padding:128px 78px 128px 80px;
+  padding:0px 78px 0px 80px;
   background-color: #fff;
+  margin-bottom: 128px;
 }
 .post__container {
   max-width:1920px;
@@ -111,7 +112,7 @@
 }
 .all-post {
   display: flex;
-  max-width: 517px;
+  max-width: 800px;
   max-height: 804px;
   flex-direction: column;
 }

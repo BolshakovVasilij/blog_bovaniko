@@ -19,8 +19,8 @@
     width:400px;
 }
   .container {
-    padding-left: 50;
-    padding-right:80;
+    padding-left: 50px;
+    padding-right:40px;
 }
   .post__container {
   justify-content: space-between;
@@ -44,36 +44,40 @@
 }
 }
 @media only screen and (max-width:1140px){
-
+  .guide__container {
+    padding-top: 250px;
+  }
   .header__nav-list {
-    width:800px;
+    width:100%;
     background-color: #FFD050;
     color:#000;
-    gap:20px;
+    gap:60px;
     padding: 15px;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
     top:0;
-    left:0;
-    transform: translateY(-200%);
+    right: 0;
+    transform: translateY(-300%);
     transition: transform 0.5s ease;
   }
   .button-enter__hidden {
-    width:220px;
+    width:300px;
     height: 49.19px;
     padding: 15px;
     position: absolute;
     top:0;
-    left: 800px;
-    transform: translateY(-200%);
+    transform: translateY(-300%);
+  
     transition: transform 0.5s ease;
   }
   .header__nav-list.nav--open {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
     transform: translateY(80px);
   }
-  .button-enter__hidden.nav--open {
-    transform: translateY(80px);
-  }
-
   .btn-enter {
     display:flex;
     border: 1px solid #494949;
@@ -108,7 +112,6 @@
     align-items: flex-start;
     gap:82px;
   }
-
   .featured {
     width: 982px;
   }
@@ -166,6 +169,12 @@
     width: 40px;
     height: 10px;
   }
+  .header__nav-list.nav--open {
+    width;
+  }
+  .button-enter__hidden.nav--open {
+    transform: translateY(80px);
+  }
 }
 @media only screen and (max-width:800px){
   .container--w800 {
@@ -180,6 +189,15 @@
   }
   .shape__container {
     height: 15px;
+  }
+  .mission__content {
+    width: 100%;
+  }
+  .mission__descr {
+    padding-left: 0px;
+  }
+  .mission__text {
+    padding-left: 0px;
   }
   .nav__btn-footer {
     display: flex;
@@ -240,9 +258,26 @@
     min-height: 228px;
     padding: 32px;
   }
-  
+  .social__list {
+    gap:15px;
+  }
 }
 @media only screen and (max-width:600px){
+  .guide { 
+    margin-bottom: 20px;
+  }
+  .about-us {
+    margin-bottom: 20px;
+  }
+  .about-us__title--shift {
+    padding-left: 0px;;
+  }
+  .post {
+    margin-bottom: 20px;
+  }
+  .map {
+    margin-bottom:40px;
+  }
   .guide__title {
     font-size:36px;
   }
@@ -268,13 +303,33 @@
   .post__container {
     gap:32px 
   }
-  
-.about-us{
+  .about-us{
   padding: 64px 38px 64px 40px;
 }
-/*.swiper-slide {
-  width:100%;
-}*/
+  .swiper-pagination {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  text-align: center;
+ }
+   .swiper-pagination-bullet{
+  width: 25px;
+  height: 8px;
+}
+.container-internal {
+  margin-bottom: 20px;
+}
+.hade {
+  align-items: center;
+  justify-content: flex-start;
+}
+.social {
+  justify-content: flex-end;
+}
+.social__list {
+  flex-direction: column;
+  align-items: center;
+  /*padding-bottom: 28px;*/
+}
 }
 @media only screen and (max-width:520px){
 
@@ -287,7 +342,8 @@
   }
 
   .guide__container {
-    padding: 100px 15px;
+
+    padding: 250px 15px 150px 15px;
     align-items: flex-start;
   }
 
@@ -334,7 +390,11 @@ font-size: 28px;
     padding:15px;
     height: 480px;
   }
-  
+  .swiper-pagination-bullet{
+    width: 18px;
+    height: 8px;
+  }
+
 
 }
 
@@ -357,6 +417,48 @@ font-size: 28px;
   .shape-yellow {
     max-width:300px;
   }
+  .map {
+    padding:0px 38px 0px 40px;
+  }
+  .map__container {
+    padding:0px 5px 0px 5px;
+    gap:24px;
+  }
+  .map-title {
+    font-size: 24px;
+  }
+.map__item {
+  min-width: 200px;
+  min-height: 150px;
+}
+.map__technology-title {
+  font-size: 24px;
+}
+.map__link {
+  width: 100%;
+  font-size: 24px;
+ }
+ .map__technology-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+ }
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 8px;
+  }
+  .map__icon {
+    width: 30px;
+  }
+  .swiper-slide {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+
+
+
+
   .footer {
     min-height: 550px;
   }
@@ -376,12 +478,22 @@ font-size: 28px;
   }
   .address-item {
     display: flex;
+
     justify-content: center;
     align-items: center;
   }
   .social {
     width:auto;
     padding: 14px 0;
+  }
+  .social__list {
+    flex-direction: row;
+  }
+  .header__nav-list {
+   
+    gap:20px;
+    padding: 10px;
+   
   }
   .description-subscrube {
     width:auto;
@@ -404,6 +516,6 @@ font-size: 28px;
     font-size: 12px;
   }
   .all-post__item {
-    padding: 16px 32px;
+    padding: 16px 5px;
   }
 }

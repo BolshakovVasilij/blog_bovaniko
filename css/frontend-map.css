@@ -1,6 +1,7 @@
   .map {
     width: 100%;
-    padding:128px 80px 0px 80px;
+    padding:0px 80px 0px 80px;
+    margin-bottom: 128px;
   }
   .map__container {
     max-width: 1920px;
@@ -89,7 +90,8 @@
    }
   .swiper-pagination-bullet{
     background-color: #645b56;
-    width: 53px;
+    width: 30px;
+    flex-wrap: nowrap;
     height: 10px;
     border-radius: 0%;
     opacity:1;
@@ -101,7 +103,7 @@
       max-width: 1760px;
       overflow: visible;
       display: flex;
-      gap:20px;
+      gap:0px;
      }
 
     .swiper-slide {

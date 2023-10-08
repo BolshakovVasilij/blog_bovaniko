@@ -21,7 +21,7 @@
   <link rel="preload" href="fonts/inter-v12-cyrillic_latin-700.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/inter-v12-cyrillic_latin-900.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/sen-v7-latin-700.woff2" as="font" crossorigin>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link href="css/index.css" rel="stylesheet" type="text/css">
 
 
@@ -32,9 +32,9 @@
   <header class="header fon">
     <!-- Logo-->
     <div class="container container--w800">
-      <div class="logo>
-          <a class=" logo__link" href="index.html">
-        <img class="logo__img" src="icons/logo.svg" alt="logo" viewbox="0 0 140 80">
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img class="logo__img" src="icons/logo.svg" alt="logo" viewbox="0 0 140 80">
         </a>
       </div>
       <!-- Navigation-->
@@ -47,24 +47,33 @@
             <span></span>
             <span></span>
           </button>
-
           <ul class="nav__list header__nav-list">
             <li class="nav__item"><a href="index.html">Главная</a></li>
-            <li class="nav__item"><a href="#">Путь</a>
+            <li class="nav__item nav__item-submenu"><a href="#">Путь 
+              <picture>
+                <source media="(min-width:1140px)" 
+                srcset="icons/arrow.svg">
+                <img class="arrow" src="icons/arrow--black.svg" alt=""
+                  width="10" height="10">
+              </picture>
+                </a>
               <ul class="nav__nested">
+                <li class="nav__item-line"><span></span></li>
                 <li class="nested__item"><a href="frontend/frontend.html">Frontend</a></li>
-                <li><a href="backend/backend.html">Backend</a></li>
-                <li><a href="backend/backend.html">Аналитика</a></li>
+                <li class="nested__item"><a href="backend/backend.html">Backend</a></li>
+                <li class="nested__item"><a href="backend/backend.html">Аналитика</a></li>
+                <li class="nested__item"><a href="backend/backend.html">Наука</a></li>
               </ul>
             </li>
             <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
             <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
           </ul>
         </nav>
-        <button class="button-enter button-enter__hidden" type="button"><a href="post.html">Вход/Регистрация</a></button>
+        <button class="button-enter button-enter__hidden" type="button"><a
+            href="post.html">Вход/Регистрация</a></button>
         <button class="btn-enter" type="button"><a class="btn-enter__link" href="#" "><img class=" img__enter"
             src="img/nav-enter.svg" alt="Вход"></a></button>
-            
+
       </div>
     </div>
   </header>
@@ -86,6 +95,33 @@
           <button class="button"><a class="button__text" href="#">Читать далее ></a></button>
         </div>
       </div>
+    </section>
+    <section class="about-us">
+      <div class="about-us__container">
+        <div class="shape__container">
+          <div class="shape-yellow"><img class="shape shape--yellow" src="img/shape-yellow.jpg" alt="shape"></div>
+          <div class="shape-violet"><img class="shape shape--violet" src="img/shape-violet.jpg" alt="shape"></div>
+        </div>
+        <div class="content__wrapper">
+          <div class="about-us__content">
+            <h3 class="about-us__title"> О сайте
+            </h3>
+            <div class="about-us__descr">На сайте публикуется контент из области информационных технологий и их
+              прикладного применения</div>
+            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
+              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+            <button class="button about-us__btn">Смотрите далее ></button>
+          </div>
+          <div class="mission__content">
+            <h3 class="about-us__title about-us__title--shift">Миссия сайта
+            </h3>
+            <div class="mission__descr">Показать, объяснить, сделать выводы.</div>
+            <p class="mission__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
+              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
+          </div>
+        </div>
+      </div>
+
     </section>
     <section class="post">
       <div class="post__container">
@@ -141,33 +177,6 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
-      <div class="about-us__container">
-        <div class="shape__container">
-          <div class="shape-yellow"><img class="shape shape--yellow" src="img/shape-yellow.jpg" alt="shape"></div>
-          <div class="shape-violet"><img class="shape shape--violet" src="img/shape-violet.jpg" alt="shape"></div>
-        </div>
-        <div class="content__wrapper">
-          <div class="about-us__content">
-            <h3 class="about-us__title"> О сайте
-            </h3>
-            <div class="about-us__descr">На сайте публикуется контент из области информационных технологий и их
-              прикладного применения</div>
-            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
-              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
-            <button class="button about-us__btn">Смотрите далее ></button>
-          </div>
-          <div class="mission__content">
-            <h3 class="about-us__title">Миссия сайта
-            </h3>
-            <div class="mission__descr">Показать, объяснить, сделать выводы.</div>
-            <p class="mission__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui accusamus
-              temporibus placeat tenetur sed asperiores, aliquid excepturi, quidem.</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
     <section class="frontend-map map">
       <div class="map__container">
         <h2 class="map-title">Выберите категорию технологии Frontend</h2>
@@ -180,8 +189,9 @@
                   <object class="map__icon" type="image/svg+xml" data="icons/internet.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Интернет</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Интернет</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
@@ -190,73 +200,81 @@
                   <object class="map__icon" type="image/svg+xml" data="icons/html5.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">HTML</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">HTML</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/css.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">CSS</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">CSS</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/js.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">JavaScript</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">JavaScript</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/websafe.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Веб-безопасность</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Веб-безопасность</a>
+                  </div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/tools.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Инструменты</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Инструменты</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/framework.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Фреймворки</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Фреймворки</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/graphql.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">GraphQL</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">GraphQL</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
             </div>
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -273,136 +291,142 @@
                   <object class="map__icon" type="image/svg+xml" data="icons/internet.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Интернет</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Интернет</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
-                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/os.svg" width="48" height="48">
+                    <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="48" height="48">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">ОС и базис</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">ОС и базис</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/yap.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Язык</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Язык</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/git.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">VCS</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">VCS</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/db.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">База данных</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">База данных</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/api.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">API</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">API</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/cash.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Кэширование</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Кэширование</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/websafe.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Безопасность</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Безопасность</a>
+                  </div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/testing.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Тестирование</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Тестирование</a>
+                  </div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/cicd.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">CI/CD</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">CI/CD</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/vmware.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Виртуализация</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Виртуализация</a>
+                  </div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="map__item">
-                  <object class="map__icon" type="image/svg+xml" data="icons/icon-map.cvg" width="20" height="20">
+                  <object class="map__icon" type="image/svg+xml" data="icons/webserver.svg" width="48" height="48">
                     <img class="map__icon-img" src="icons/icon-map.jpg" alt="icon" width="20" height="20">
                   </object>
-                  <div class="map__technology-title"><a class="map__link" href="#"  target="_blank">Веб-серверы</a></div>
-                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ullam
+                  <div class="map__technology-title"><a class="map__link" href="#" target="_blank">Веб-серверы</a></div>
+                  <div class="map__technology-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                    ullam
                     necessitatibus.</div>
                 </div>
               </div>
             </div>
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section>
-
-
-    <article>
-      <section> Статьи</section>
-    </article>
-    <article>
-      <section> Новое </section>
-    </article>-->
-    <aside></aside>
   </main>
   <!-- блок для ссылок на социальные сети -->
   <footer class="footer">
