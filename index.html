@@ -34,7 +34,29 @@
     <div class="container container--w800">
       <div class="logo">
         <a href="index.html" class="logo__link">
-          <img class="logo__img" src="icons/logo.svg" alt="logo" viewbox="0 0 140 80">
+          <svg class="logo__link--top" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140.3 40.9" width="150" height="100"
+            xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill: #333333;
+                stroke: #F6F6F6;
+                stroke-width: 0.25;
+                stroke-linecap: square;
+                stroke-linejoin: bevel;
+                stroke-miterlimit: 10;
+              }
+
+              .st1 {
+                font-family: 'BellMT';
+              }
+
+              .st2 {
+                font-size: 37.6533px;
+              }
+            </style>
+            <text transform="matrix(0.792 0 0 1 -4.882813e-04 31.5162)" class="st0 st1 st2">!bovaniko&gt;</text>
+          </svg>
         </a>
       </div>
       <!-- Navigation-->
@@ -49,14 +71,12 @@
           </button>
           <ul class="nav__list header__nav-list">
             <li class="nav__item"><a href="index.html">Главная</a></li>
-            <li class="nav__item nav__item-submenu"><a href="#">Путь 
-              <picture>
-                <source media="(min-width:1140px)" 
-                srcset="icons/arrow.svg">
-                <img class="arrow" src="icons/arrow--black.svg" alt=""
-                  width="10" height="10">
-              </picture>
-                </a>
+            <li class="nav__item nav__item-submenu"><a href="#">Путь
+                <picture>
+                  <source media="(min-width:1140px)" srcset="icons/arrow.svg">
+                  <img class="arrow" src="icons/arrow--black.svg" alt="" width="10" height="10">
+                </picture>
+              </a>
               <ul class="nav__nested">
                 <li class="nav__item-line"><span></span></li>
                 <li class="nested__item"><a href="frontend/frontend.html">Frontend</a></li>
@@ -132,7 +152,7 @@
           <div class="featured__container">
             <div class="featured__img">
               <picture class="post__img">
-                <source media="(min-width: 520px)" srcset="img/img-post.jpg ">
+                <source media="(min-width: 712px)" srcset="img/img-post.jpg ">
                 <image class="post__img" src="img/img-post-390.jpg" alt="post"></image>
               </picture>
               <p class="featured__descr autor__descr">От <a class=" autor__descr autor__descr--link">Большаков
@@ -433,14 +453,35 @@
     <div class="container container__content">
       <div class="footer__top">
         <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__img" src="icons/logo.svg" alt="logo" width="140px" height="28.354px"
-              viewbox="0 0 140 28.354">
+          <a href="index.html" class="logo__link">
+            <svg class="logo__link--top" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140.3 40.9" width="150"
+              height="100" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #333333;
+                  stroke: #F6F6F6;
+                  stroke-width: 0.25;
+                  stroke-linecap: square;
+                  stroke-linejoin: bevel;
+                  stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                  font-family: 'BellMT';
+                }
+
+                .st2 {
+                  font-size: 37.6533px;
+                }
+              </style>
+              <text transform="matrix(0.792 0 0 1 -4.882813e-04 31.5162)" class="st0 st1 st2">!bovaniko&gt;</text>
+            </svg>
           </a>
         </div>
         <!-- Navigation-footer-->
         <nav class="nav footer__nav">
-          <div class="container__nav">
+          <div class="container__nav container__nav--footer">
             <button class="nav__btn nav__btn-footer">
               <span></span>
               <span></span>
@@ -450,10 +491,18 @@
             </button>
             <ul class="nav__list nav-footer">
               <li class="nav__item"><a href="index.html">Главная</a></li>
-              <li class="nav__item"><a href="#">Путь</a>
-                <ul class="nav__nested">
-                  <li class="nested__item"><a href="frontend/frontend.html"></a></li>
-                  <li><a href="backend/backend.html"></a></li>
+              <li class="nav__item nav__item-submenu">
+                <a>Путь
+                  <picture>
+                    <source media="(min-width:1140px)" srcset="icons/arrow.svg">
+                    <img class="arrow" src="icons/arrow--black.svg" alt="" width="10" height="10">
+                  </picture>
+                </a>
+                <ul class="nav__nested nav__nested--gorizont">
+                  <li class="nested__item"><a href="frontend/frontend.html">Frontend</a></li>
+                  <li class="nested__item"><a href="backend/backend.html">Backend</a></li>
+                  <li class="nested__item"><a href="backend/backend.html">Аналитика</a></li>
+                  <li class="nested__item"><a href="backend/backend.html">Наука</a></li>
                 </ul>
               </li>
               <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>

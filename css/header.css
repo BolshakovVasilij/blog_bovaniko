@@ -24,7 +24,7 @@
 .logo__link {
   cursor: pointer;;
 }
-.logo__img {
+.logo__link--top {
   width:270px;
   height: 80px;
 }

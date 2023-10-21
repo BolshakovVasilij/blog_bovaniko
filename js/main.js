@@ -1,19 +1,21 @@
 
-//скрытое меню
+//выпадающее меню header
 const menuBtn = document.querySelector ('.nav__btn'); 
 const menuMobile = document.querySelector ('.header__nav-list');
  menuBtn.addEventListener ('click', ()=> {menuMobile.classList.toggle ('nav--open')
  });
-//выпадающее меню
-
-//слайдер 
+//выпадающее меню footer
+const menuBtnFooter = document.querySelector ('.nav__btn-footer'); 
+const menuMobileFooter = document.querySelector ('.nav-footer');
+menuBtnFooter.addEventListener ('click', ()=> {menuMobileFooter.classList.toggle ('nav-footer--open')
+});
+//слайдер nav-footer
 const swiperOne = new Swiper('.map__slider', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 0,
   centeredSlides: true,
-  //loopedSlides: 7,
-  //watchSlidesVisibility: true,
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -21,7 +23,7 @@ const swiperOne = new Swiper('.map__slider', {
   breakpoints: {
     1920: {
       slidesPerView: 'auto',
-      spaceBetween: -80,
+      spaceBetween: 'auto',
     },
     1140: {
       spaceBetween: 0,
