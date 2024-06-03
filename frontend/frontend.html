@@ -1,201 +1,414 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-     <title>Bovaniko_Blog</title>
-
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <title>Bovaniko_Front</title>
+  <!--For mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--For mobile devices & no-resize-->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <!--Document Favicon in browser tabs-->
+  <link rel="shortcut icon" href="../icons/icon1.png" type="image/x-icon">
+  <meta name="description" content="Learn web">
+  <meta name="keywords" content="html, CSS, JS, webdev, BolshakovVasilij">
+  <meta name="author" content="BolshakovVasilij">
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/inter-v12-cyrillic_latin-900.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/sen-v7-latin-700.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-    <div class="container-fluid">
-        <div>
-            <a class="navbar-brand" href="index.html">
-            <img src="../img/front_logo.png" alt="logo" width="400" height="130">
-            </a>
-        </div>   
-        <div class="collapse navbar-collapse">
-             <ul class="navbar-nav ms-auto py-6 py-lg-0">
-                <li class="nav-item"><label for "search"></label><form action="POST"><input type="search" name="form_search" id="form_search1" placeholder="Поиск"></form>
-                </li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="frontend.html"><b>Алгоритм Fronted</b></a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../backend/backend.html">Алгоритм Backend</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../portfolio/portfolio.html">Портфолио</a></li> 
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../contact/contact.html">Контакты</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="entrance/entrance.html">Вход</a></li>
-            </ul>
-        </div>
+
+<body class="frontend-page">
+  <!-- Page Header-->
+  <!-- Navigation-->
+  <header class="header fon">
+    <!-- Logo-->
+    <div class="container container--w800">
+      <div class="logo">
+        <a href="../index.html" class="logo__link">
+          <svg class="logo__link--top" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140.3 40.9" width="150" height="100"
+            xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill: #333333;
+                stroke: #F6F6F6;
+                stroke-width: 0.25;
+                stroke-linecap: square;
+                stroke-linejoin: bevel;
+                stroke-miterlimit: 10;
+              }
+
+              .st1 {
+                font-family: 'BellMT';
+              }
+
+              .st2 {
+                font-size: 37.6533px;
+              }
+            </style>
+            <text transform="matrix(0.792 0 0 1 -4.882813e-04 31.5162)" class="st0 st1 st2">!bovaniko&gt;</text>
+          </svg>
+        </a>
+      </div>
+      <!-- Navigation-->
+      <div class="container__nav">
+        <nav class="nav header__nav">
+          <button class="nav__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__list header__nav-list">
+            <li class="nav__item"><a href="../index.html">Главная</a></li>
+            <li class="nav__item nav__item-submenu"><a href="#">Путь
+                <picture>
+                  <source media="(min-width:1140px)" srcset="../icons/arrow.svg">
+                  <img class="arrow" src="../icons/arrow--black.svg" alt="" width="10" height="10">
+                </picture>
+              </a>
+              <ul class="nav__nested">
+                <li class="nav__item-line"><span></span></li>
+                <li class="nested__item"><a href="../frontend/frontend.html">Frontend</a></li>
+                <li class="nested__item"><a href="../backend/backend.html">Backend</a></li>
+                <li class="nested__item"><a href="../backend/backend.html">Аналитика</a></li>
+                <li class="nested__item"><a href="../backend/backend.html">Наука</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="../contact/contact.html">Портфолио</a></li>
+            <li class="nav__item"><a href="../contact/contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="button-enter button-enter__hidden" type="button"><a
+            href="../post.html">Вход/Регистрация</a></button>
+        <button class="btn-enter" type="button"><a class="btn-enter__link" href="#" "><img class=" img__enter"
+            src="../img/nav-enter.svg" alt="Вход"></a></button>
+      </div>
     </div>
-</nav>
- <!-- Page Header-->
-<header class="masthead" style="background-image: url('../img/front_bg.svg')">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-8 col-lg-10 col-xl-7">
-                <div class="site-heading">
-                    <h1>Алгоритм Fronted</h1>
-                    <blockquote class="blockquote"><p class="text-nowrap">"Встречают по одежке..."</p>
-                    </blockquote>
-                   
-                </div>
-            </div>
+  </header>
+  <!-- Page Main-->
+  <main class="frontend-main">
+      <section class="frontend-guide">
+        <div class="frontend-guide-wrapper">
+          <div class="guide__content">
+            <h1 class="section-title">Алгоритм Fronted</h1>
+            <blockquote class="blockquote-guide">
+              <p class="guide__title guide__title--black">"Встречают по одежке..."</p>
+            </blockquote>
+          </div>
+          <div class="frontend-guide__img">
+            <picture class="post__img">
+              <!--<source media="(min-width: 900px)" srcset="img/img-post.jpg ">
+              <source media="(min-width: 600px)" srcset="img/img-post-600.jpg ">-->
+              <img class="section-img" src="../img/frontend-top-img.jpg" alt="" >
+            </picture>
+            
+          </div>
+          <div class="guide__form-search">
+            <form class = "form__search" action="POST">
+              <input class = "search" type="search" name="form_search" placeholder="Поиск">
+            </form>
+          </div>
         </div>
-    </div>
-</header>
-<!-- Page Aside-->
-<aside>
-    <div><p>Меню выбора шага</p></div>
-</aside>
-<div class="container">    
-</div>
-<main>
-<!-- Шаг №1 Интернет -->
-    <section><h3>Шаг №1 Интернет</h3>
+      </section>
+      <aside class = "catergories-slider">
+        <div class = "slider-title">
+          <p class="slider-title__text">Frontend шаг за шагом</p>
+        </div>
+        <div class="slider__wrapper">
+          <!--slides-->
+          
+        </div>
+      </aside>
+  </main>
+
+
+  <main>
+    <!-- Шаг №1 Интернет -->
+    <section>
+      <h3>Шаг №1 Интернет</h3>
+      <ol>
+        <li>
+          <div>HTTP</div>
+        </li>
+        <li>
+          <div>Принцип работы браузера</div>
+        </li>
+        <li>
+          <div>DNS</div>
+        </li>
+        <li>
+          <div>Домен</div>
+        </li>
+        <li>
+          <div>Хостинг</div>
+        </li>
         <ol>
-            <li><div>HTTP</div></li>
-            <li><div>Принцип работы браузера</div></li>
-            <li><div>DNS</div></li>
-            <li><div>Домен</div></li>
-            <li><div>Хостинг</div></li>
-        <ol>
-    </section>   
-<!-- Шаг №2 HTML -->
-    <section><h3><a href="front-step_two.html">Шаг №2 HTML</a></h3></section>
-        <ol>
-            <li><div><a href="front-step_two.html#semantic_el">Семантические элементы</a></div></li>
-                <ul>
-                    <li><div><a href="front-step_two.html#semantic_structur">Структура</a></div></li>
-                    <li><div><a href="front-step_two.html#sematic_marcup">Разметка</a></div></li>
-                    <li><div><a href="front-step_two.html#sematic_teg">Теги и атрибуты</a></div></li>
-                </ul>
-                <li><div><a href="front-step_two.html#form_validation">Формы и валидация</a></div>
-                    <ul>
-                        <li><div><a href="front-step_two.html#form_interactiv">Интерактивная форма</a></div></li>
-                        <li><div><a href="front-step_two.html#form_managment">Элементы управления формой</a></div></li>
-                        <li><div><a href="front-step_two.html#form_managment"><em>Валидация (требует заполнения)</em></a></div></li>
-                    </ul>
-                </li>
-                <li><div><a href="front-step_two.html#embed_media">Встроенные мультимедийные объекты</a></div></li>
-                    <ul>
-                        <li>
-                            <div><a href="front-step_two.html#embed_frame">Окно для просмотра внешнего HTML-источника</a></div>
-                        </li>
-                        <li>
-                            <div><a href="front-step_two.html#embed_object">Многоцелевые встраиваимые объекты</a></div>
-                        </li>
-                        <li>
-                            <div><a href="front-step_two.html#embed_video_audio">Видео- и аудиоплееры</a></div>
-                        </li>
-                        <li>
-                            <div><a href="front-step_two.html#embed_canvas">Сценарий для рисования</a></div>
-                        </li>
-                    </ul>
-                <li><div><a href="front-step_two.html#availability"><em>Доступность(требует заполнения)</em></div></li>
-                <li><div><a href="front-step_two.html#seo_basics"><em>Основы SEO(требует заполнения)</em></a></div></li>
-        </ol>
-<!-- Шаг №3 CSS3 -->
-    <section><h3><a href="front-step_three.html#css3">Шаг №3 CSS</a></h3>
-        <ol>
-            <li><div><a href="front-step_three.html">Основы CSS</a></div></li>
-            <li><div><a href="front-step_three.html">Layouts CSS3</a></div>
-                <ul>
-                    <li>
-                        <div><a href="front-step_three">Floats</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_three">Позиционирование</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_three.html">Отображение</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_three.html">Блочная модель</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_three.html">CSS Grid</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_two.html">Flexbox</a></div>
-                    </li>
-                </ul>
-            </li>
-            <li><div><a href="front-step_three.html">Отзывчивый дизайн</a></div></li>
-            <li><div><a href="front-step_two.html">Медиа-запросы</a></div></li>
-            <li><div><a href="front-step_two.html">Архитектура</a></div>
-                <ul>
-                    <li>
-                        <div><a href="front-step_two.html">BEM</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_two.html">OOCSS</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_two.html">SMACSS</a></div>
-                    </li>
-                </ul>
-            </li>
-            <li><div><a href="front-step_two.html">Процессоры</a></div>
-                <ul>
-                    <li>
-                        <div><a href="front-step_two.html">Sass</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_two.html">postCSS</a></div>
-                    </li>
-                    <li>
-                        <div><a href="front-step_two.html">Less</a></div>
-                    </li>
-                </ul>
-            </li>
-        </ol>
     </section>
-<!-- Шаг №4 JavaScript -->
+    <!-- Шаг №2 HTML -->
+    <section>
+      <h3><a href="front-step_two.html">Шаг №2 HTML</a></h3>
+    </section>
+    <ol>
+      <li>
+        <div><a href="front-step_two.html#semantic_el">Семантические элементы</a></div>
+      </li>
+      <ul>
+        <li>
+          <div><a href="front-step_two.html#semantic_structur">Структура</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html#sematic_marcup">Разметка</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html#sematic_teg">Теги и атрибуты</a></div>
+        </li>
+      </ul>
+      <li>
+        <div><a href="front-step_two.html#form_validation">Формы и валидация</a></div>
+        <ul>
+          <li>
+            <div><a href="front-step_two.html#form_interactiv">Интерактивная форма</a></div>
+          </li>
+          <li>
+            <div><a href="front-step_two.html#form_managment">Элементы управления формой</a></div>
+          </li>
+          <li>
+            <div><a href="front-step_two.html#form_managment"><em>Валидация (требует заполнения)</em></a></div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div><a href="front-step_two.html#embed_media">Встроенные мультимедийные объекты</a></div>
+      </li>
+      <ul>
+        <li>
+          <div><a href="front-step_two.html#embed_frame">Окно для просмотра внешнего HTML-источника</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html#embed_object">Многоцелевые встраиваимые объекты</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html#embed_video_audio">Видео- и аудиоплееры</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html#embed_canvas">Сценарий для рисования</a></div>
+        </li>
+      </ul>
+      <li>
+        <div><a href="front-step_two.html#availability"><em>Доступность(требует заполнения)</em></div>
+      </li>
+      <li>
+        <div><a href="front-step_two.html#seo_basics"><em>Основы SEO(требует заполнения)</em></a></div>
+      </li>
+    </ol>
+    <!-- Шаг №3 CSS3 -->
+    <section>
+      <h3><a href="front-step_three.html#css3">Шаг №3 CSS</a></h3>
+      <ol>
+        <li>
+          <div><a href="front-step_three.html">Основы CSS</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_three.html">Layouts CSS3</a></div>
+          <ul>
+            <li>
+              <div><a href="front-step_three">Floats</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_three">Позиционирование</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_three.html">Отображение</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_three.html">Блочная модель</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_three.html">CSS Grid</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_two.html">Flexbox</a></div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div><a href="front-step_three.html">Отзывчивый дизайн</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html">Медиа-запросы</a></div>
+        </li>
+        <li>
+          <div><a href="front-step_two.html">Архитектура</a></div>
+          <ul>
+            <li>
+              <div><a href="front-step_two.html">BEM</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_two.html">OOCSS</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_two.html">SMACSS</a></div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div><a href="front-step_two.html">Процессоры</a></div>
+          <ul>
+            <li>
+              <div><a href="front-step_two.html">Sass</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_two.html">postCSS</a></div>
+            </li>
+            <li>
+              <div><a href="front-step_two.html">Less</a></div>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <!-- Шаг №4 JavaScript -->
     <div>шаг №4 JavaScript</div>
-        <div>Синтаксис и базовые конструкции</div>
-        <div>Работа с DOM</div>
-        <div>Fetch API/Ajax(XHR)</div>
-        <div>ES6+ и модульный подход</div>
-        <div>Веб-компоненты</div>
-        <div>Понимание концепций(Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, Строгий режим)</div>
-<!-- Шаг №5 Веб-безопасность -->
+    <div>Синтаксис и базовые конструкции</div>
+    <div>Работа с DOM</div>
+    <div>Fetch API/Ajax(XHR)</div>
+    <div>ES6+ и модульный подход</div>
+    <div>Веб-компоненты</div>
+    <div>Понимание концепций(Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, Строгий режим)</div>
+    <!-- Шаг №5 Веб-безопасность -->
     <div>шаг №5 Веб-безопасность</div>
-        <div>HTTPS</div>
-        <div>CORS</div>
-        <div>Политика защиты контента (CSP)</div>
-        <div>OWASP Security Risks</div>
-<!-- Шаг №6 Инструменты -->
+    <div>HTTPS</div>
+    <div>CORS</div>
+    <div>Политика защиты контента (CSP)</div>
+    <div>OWASP Security Risks</div>
+    <!-- Шаг №6 Инструменты -->
     <div>шаг №6 Инструменты</div>
-        <div>VCS (Сервисы для хостинга проектов (GitHub,GitLab, Bitbucket), Git)</div>
-        <div>Литеры и форматеры (Prettier, ESLint, StandardJS)</div>
-        <div>Сборка (Таск-раннеры (npm scripts, Gulp), Бандлеры (Webpack, Rollup,Parcel))</div>
-        <div>Менеджеры пакетов (npm, yarn)</div>
-<!-- Шаг №7 Фреймворк -->
+    <div>VCS (Сервисы для хостинга проектов (GitHub,GitLab, Bitbucket), Git)</div>
+    <div>Литеры и форматеры (Prettier, ESLint, StandardJS)</div>
+    <div>Сборка (Таск-раннеры (npm scripts, Gulp), Бандлеры (Webpack, Rollup,Parcel))</div>
+    <div>Менеджеры пакетов (npm, yarn)</div>
+    <!-- Шаг №7 Фреймворк -->
     <div>шаг №7 Фреймворк</div>
-        <div>Vue.js (VueX)</div>
-        <div>Angular (RxJS, NgRx)</div>
-        <div>React.js (Redux,MobX)</div>
-<!-- Шаг №7 GraphQL -->
+    <div>Vue.js (VueX)</div>
+    <div>Angular (RxJS, NgRx)</div>
+    <div>React.js (Redux,MobX)</div>
+    <!-- Шаг №7 GraphQL -->
     <div>шаг №8 GraphQL</div>
-        <div>Apollo</div>
-        <div>Real Modern</div>
+    <div>Apollo</div>
+    <div>Real Modern</div>
 
-</main>
-    <footer> 
-        <!-- блок для ссылок на социальные сети -->
-        <div><p><strong>Наша страница в социальных медиа</strong></p>
-            <p><img src="../img/icons/telegram-app.svg" alt="telegram" width="48" height="48"> <img src="../img/icons/vk-circled.svg" alt="vkontakte"width="48" height="48"> <img src="../img/icons/whatsapp-96.svg" alt="whatsapp"width="48" height="48"></p>
+  </main>
+  <footer>
+    <footer class="footer">
+      <div class="container container__content">
+        <div class="footer__top">
+          <div class="logo">
+            <a href="../index.html" class="logo__link">
+              <svg class="logo__link--top" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140.3 40.9" width="150"
+                height="100" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #333333;
+                    stroke: #F6F6F6;
+                    stroke-width: 0.25;
+                    stroke-linecap: square;
+                    stroke-linejoin: bevel;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st1 {
+                    font-family: 'BellMT';
+                  }
+
+                  .st2 {
+                    font-size: 37.6533px;
+                  }
+                </style>
+                <text transform="matrix(0.792 0 0 1 -4.882813e-04 31.5162)" class="st0 st1 st2">!bovaniko&gt;</text>
+              </svg>
+            </a>
+          </div>
+          <!-- Navigation-footer-->
+          <nav class="nav footer__nav">
+            <div class="container__nav container__nav--footer">
+              <button class="nav__btn nav__btn-footer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="nav__list nav-footer">
+                <li class="nav__item"><a href="index.html">Главная</a></li>
+                <li class="nav__item nav__item-submenu">
+                  <a>Путь
+                    <picture>
+                      <source media="(min-width:1140px)" srcset="icons/arrow.svg">
+                      <img class="arrow" src="icons/arrow--black.svg" alt="" width="10" height="10">
+                    </picture>
+                  </a>
+                  <ul class="nav__nested nav__nested--gorizont">
+                    <li class="nested__item"><a href="frontend/frontend.html">Frontend</a></li>
+                    <li class="nested__item"><a href="backend/backend.html">Backend</a></li>
+                    <li class="nested__item"><a href="backend/backend.html">Аналитика</a></li>
+                    <li class="nested__item"><a href="backend/backend.html">Наука</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item"><a href="contact/contact.html">Портфолио</a></li>
+                <li class="nav__item"><a href="contact/contact.html">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
+        <div class="container-internal">
+          <h2 class="description-subscrube">
+            Подпишись на рассылку новостей и событий
+          </h2>
+          <div class="container-internal__email">
+            <div class="email">
+              <input class="email__input" type="email" name="email" value="Введите email">
+            </div>
+            <button class="button" type="button"><a href="post.html">Подписаться</a></button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="address">
+            <ul class="address-list">
+              <li class="address-item">Москва</li>
+              <li class="nav__item address-item"><a href="mailto:bovanikoz@gmail.com"
+                  target="_blank">bovanikoz@gmail.com</a></li>
+            </ul>
+            </p>
+          </div>
+          <div class="social">
+            <ul class="nav__list social__list">
+              <li class="nav__item"><a href="#"><img class="social__img" src="../img/fb.svg" alt="facebook"></a></li>
+              <li class="nav__item"><a href="#"><img class="social__img" src="../img/ing.svg" alt="instagram"></a></li>
+              <li class="nav__item"><a href="#"><img class="social__img" src="../img/tw.svg" alt="twitter"></a></li>
+              <li class="nav__item"><a href="#"><img class="social__img" src="../img/lin.svg" alt="linkedin"></a></li>
+            </ul>
+          </div>
+          <div class="hade">
+            <p class="hade__text">Сделано ручками на flexbox</p>
+            <div class="hade-wrapper"><img class="hade__img" src="icons/made_Hade2.png" alt="made hade"></div>
+          </div>
+        </div>
+      </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 
+
+
+</body>
+
+</html>
