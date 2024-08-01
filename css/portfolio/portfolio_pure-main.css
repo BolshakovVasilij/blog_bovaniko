@@ -19,6 +19,7 @@
 position:absolute;
 left:0;
 top:5rem;
+max-width: 50%;
 }
 .hero_slogan{
   position:absolute;
